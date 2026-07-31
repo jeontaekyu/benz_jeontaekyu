@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>벤츠 GLC 트림 비교 | 220d·300 아방가르드·AMG 라인 가격 차이와 유지비 — 전태규 과장</title>
+<meta name="description" content="벤츠 GLC X254 MY26 트림 비교. GLC 220d, GLC 300 4MATIC 아방가르드, AMG 라인의 가격 차이와 옵션, 디젤·가솔린 유지비까지 정비사 출신 상담사가 정리했습니다.">
+<meta property="og:title" content="벤츠 GLC 트림 비교 | 가격 차이와 유지비 총정리">
+<meta property="og:description" content="220d와 300의 차이는 30만원. 옵션과 유류비까지 넣으면 계산이 달라집니다.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+/* ══════════════════════════════════════════════════════════
+   전태규 어프로치북 — 엔진 스타일시트
+   차종이 바뀌어도 이 아래는 손대지 않습니다.
+   ══════════════════════════════════════════════════════════ */
+:root{
+  --ink:#08080A; --panel:#101013; --panel2:#15151A;
+  --line:#232329; --hair:#1A1A1F;
+  --gold:#C7A868; --gold-soft:rgba(199,168,104,.10); --gold-line:rgba(199,168,104,.30);
+  --text:#ECEAE6; --mute:#8A8884; --dim:#595754;
+  --diesel:#7FA3B5;
+  --r:2px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);color:var(--text);
+  font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif;
+  font-size:15px;line-height:1.78;letter-spacing:-.01em;
+  -webkit-font-smoothing:antialiased;padding-bottom:74px;
+}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Barlow Condensed','Pretendard Variable',sans-serif;font-weight:600;line-height:1.1;letter-spacing:.01em}
+
+.eyebrow{
+  font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;
+  letter-spacing:.3em;text-transform:uppercase;color:var(--gold);
+  display:flex;align-items:center;gap:12px;margin-bottom:16px;
+}
+.eyebrow::after{content:'';flex:1;height:1px;background:var(--line)}
+
+.docbar{
+  border-bottom:1px solid var(--line);padding:15px 0;
+  font-family:'Barlow Condensed',sans-serif;font-size:12px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--dim);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.docbar b{color:var(--gold);font-weight:600}
+
+.hero{padding:64px 0 52px;border-bottom:1px solid var(--line)}
+.hero .kicker{font-family:'Barlow Condensed',sans-serif;font-size:12.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);margin-bottom:20px}
+.hero h1{font-size:clamp(46px,13vw,84px);font-weight:700;letter-spacing:-.015em}
+.hero h1 em{font-style:normal;color:var(--gold);display:block}
+.hero .sub{margin-top:20px;font-size:16px;color:var(--mute);max-width:33em;line-height:1.85}
+.hero .meta{margin-top:32px;padding-top:24px;border-top:1px solid var(--hair);display:flex;gap:36px;flex-wrap:wrap}
+.hero .meta div span{display:block;font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin-bottom:3px}
+.hero .meta div b{font-family:'Barlow Condensed',sans-serif;font-size:25px;font-weight:600}
+
+section{padding:58px 0;border-bottom:1px solid var(--hair)}
+h2{font-size:clamp(27px,7vw,38px);margin-bottom:10px}
+.lead{color:var(--mute);font-size:14.5px;margin-bottom:34px;max-width:38em}
+
+/* ── 계단 ── */
+.stair{position:relative;padding-left:28px}
+.stair::before{content:'';position:absolute;left:5px;top:16px;bottom:52px;width:1px;background:linear-gradient(var(--gold-line),var(--line))}
+.step{position:relative;margin-bottom:16px}
+.step::before{content:'';position:absolute;left:-27px;top:24px;width:11px;height:11px;border-radius:50%;background:var(--ink);border:1px solid var(--gold-line)}
+.step.branch::before{border-color:var(--diesel)}
+.delta{display:block;font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding:8px 0 8px 2px}
+.delta.b{color:var(--diesel)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px 22px 20px}
+.step.branch .card{border-left:2px solid rgba(127,163,181,.45)}
+.card .tag{font-family:'Barlow Condensed',sans-serif;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin-bottom:7px}
+.card .name{font-family:'Barlow Condensed',sans-serif;font-size:27px;font-weight:600;line-height:1.14}
+.card .price{font-family:'Barlow Condensed',sans-serif;font-size:23px;color:var(--gold);margin-top:5px;font-variant-numeric:tabular-nums}
+.chips{margin-top:14px;padding-top:14px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:11.5px;color:var(--mute);border:1px solid var(--line);padding:3px 9px;border-radius:2px}
+.blk{margin-top:18px}
+.blk h4{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:9px;font-weight:600}
+.blk.minus h4{color:var(--dim)}
+.blk ul{list-style:none}
+.blk li{position:relative;padding-left:16px;font-size:14px;margin-bottom:5px;line-height:1.62}
+.blk li::before{content:'+';position:absolute;left:0;color:var(--gold);font-family:'Barlow Condensed',sans-serif}
+.blk.minus li{color:var(--mute)}
+.blk.minus li::before{content:'−';color:var(--dim)}
+.blk p{font-size:13.5px;color:var(--mute);line-height:1.7}
+.only{color:var(--gold);font-size:10.5px;border:1px solid var(--gold-line);padding:1px 6px;margin-left:6px;border-radius:2px;white-space:nowrap;letter-spacing:.04em}
+
+/* ── 정비사의 시선 ── */
+.tech{margin-top:16px;background:var(--panel2);border:1px solid var(--line);border-left:2px solid var(--gold);border-radius:var(--r);padding:15px 17px}
+.tech .lbl{display:block;font-family:'Barlow Condensed',sans-serif;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.tech p{font-size:13.5px;color:var(--mute);line-height:1.75}
+.tech strong{color:var(--text);font-weight:600}
+
+/* ── 계산기 ── */
+.calc{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:24px 22px}
+.calc h3{font-family:'Barlow Condensed',sans-serif;font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.calc .cx{font-size:13px;color:var(--dim);margin-bottom:14px;line-height:1.6}
+.calc .sep{margin:24px 0;border-top:1px solid var(--line)}
+.opt{display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-bottom:1px solid var(--hair);cursor:pointer}
+.opt:last-of-type{border-bottom:none}
+.opt input{appearance:none;-webkit-appearance:none;width:17px;height:17px;flex:0 0 17px;margin-top:4px;border:1px solid var(--line);border-radius:2px;background:transparent;cursor:pointer;position:relative}
+.opt input:checked{border-color:var(--gold);background:var(--gold-soft)}
+.opt input:checked::after{content:'';position:absolute;left:5px;top:1px;width:5px;height:10px;border:solid var(--gold);border-width:0 1.5px 1.5px 0;transform:rotate(42deg)}
+.opt .t{flex:1;font-size:14px;line-height:1.5}
+.opt .t small{display:block;color:var(--dim);font-size:12px;margin-top:2px}
+.opt .p{font-family:'Barlow Condensed',sans-serif;font-size:16px;color:var(--gold);white-space:nowrap;padding-top:2px}
+.krow{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px}
+.krow label{font-size:13px;color:var(--mute);letter-spacing:.04em}
+.krow .v{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-variant-numeric:tabular-nums}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:2px;background:var(--line);outline:none;margin:14px 0 4px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(--gold);cursor:pointer;border:3px solid var(--ink)}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--gold);cursor:pointer;border:3px solid var(--ink)}
+.out{display:grid;gap:13px;margin-top:22px;padding-top:22px;border-top:1px solid var(--line)}
+.orow{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.orow .lab{font-size:13.5px;color:var(--mute)}
+.orow .amt{font-family:'Barlow Condensed',sans-serif;font-size:25px;font-variant-numeric:tabular-nums}
+.orow.hi .lab{color:var(--text)}
+.orow.hi .amt{color:var(--gold)}
+.verdict{margin-top:20px;padding:16px 18px;background:var(--panel2);border:1px solid var(--gold-line);border-radius:var(--r);font-size:13.8px;line-height:1.78}
+.assume{margin-top:16px;padding-top:14px;border-top:1px solid var(--hair);font-size:12px;color:var(--dim);line-height:1.85}
+.assume input{width:60px;background:transparent;border:none;border-bottom:1px solid var(--line);color:var(--gold);font-family:'Barlow Condensed',sans-serif;font-size:14px;text-align:right;padding:1px 3px;font-variant-numeric:tabular-nums}
+.assume input:focus{outline:none;border-bottom-color:var(--gold)}
+
+/* ── 표 ── */
+.scroller{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:var(--r)}
+table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--hair)}
+thead th{font-family:'Barlow Condensed',sans-serif;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);background:var(--panel2);font-weight:600;position:sticky;top:0}
+tbody th{font-weight:500;color:var(--mute);background:var(--panel2);position:sticky;left:0;z-index:2;border-right:1px solid var(--line);font-size:12.5px}
+thead th:first-child{position:sticky;left:0;z-index:3}
+td{font-variant-numeric:tabular-nums}
+td b{color:var(--gold);font-weight:500}
+.hint{font-size:11.5px;color:var(--dim);margin-top:10px;letter-spacing:.05em;line-height:1.7}
+
+/* ── 사양군 ── */
+.spec{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin-bottom:10px}
+.spec h4{font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.spec p{font-size:13.5px;color:var(--mute);line-height:1.95}
+
+.pay{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--hair)}
+.pay:last-child{border-bottom:none}
+.pay .l{font-size:14px}
+.pay .l small{display:block;color:var(--dim);font-size:12px;margin-top:1px}
+.pay .r{font-family:'Barlow Condensed',sans-serif;font-size:17px;color:var(--gold);white-space:nowrap}
+
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:10px}
+.sw div{text-align:center}
+.sw i{display:block;height:46px;border-radius:2px;border:1px solid var(--line);margin-bottom:7px}
+.sw span{font-size:11.5px;color:var(--mute);line-height:1.4;display:block}
+.sw em{font-style:normal;display:block;font-family:'Barlow Condensed',sans-serif;font-size:12px;color:var(--gold);margin-top:2px}
+
+.fits{display:grid;gap:12px}
+.fit{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px}
+.fit .nm{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:600}
+.fit .pr{font-family:'Barlow Condensed',sans-serif;color:var(--gold);font-size:15px;margin-bottom:11px}
+.fit ul{list-style:none}
+.fit li{position:relative;padding-left:15px;font-size:13.5px;color:var(--mute);margin-bottom:4px;line-height:1.6}
+.fit li::before{content:'';position:absolute;left:0;top:10px;width:6px;height:1px;background:var(--gold)}
+
+.creed{padding:60px 0;text-align:center;border-bottom:1px solid var(--hair)}
+.creed q{display:block;font-family:'Barlow Condensed',sans-serif;font-size:clamp(25px,6.5vw,36px);line-height:1.32;quotes:none}
+.creed q em{font-style:normal;color:var(--gold)}
+.creed .by{margin-top:18px;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
+
+.me{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:26px 24px}
+.me .nm{font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:600}
+.me .rl{font-size:13px;color:var(--mute);margin-top:2px}
+.me .tel{font-family:'Barlow Condensed',sans-serif;font-size:33px;color:var(--gold);margin:18px 0 4px;letter-spacing:.02em}
+.me .hr{font-size:12.5px;color:var(--dim)}
+.acts{display:grid;gap:9px;margin-top:22px}
+.act{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 17px;border:1px solid var(--line);border-radius:var(--r);text-decoration:none;color:var(--text);font-size:14px;transition:border-color .2s,background .2s}
+.act:hover,.act:focus-visible{border-color:var(--gold-line);background:var(--gold-soft)}
+.act span{font-size:12px;color:var(--dim)}
+.act.pri{border-color:var(--gold-line);background:var(--gold-soft)}
+.halls{margin-top:22px;padding-top:20px;border-top:1px solid var(--hair);font-size:13px;color:var(--mute);line-height:1.9}
+
+footer{padding:36px 0 44px;font-size:11.5px;color:var(--dim);line-height:1.85}
+footer b{color:var(--mute);font-weight:500}
+
+.bottombar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;background:rgba(8,8,10,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.bottombar a{flex:1;text-align:center;padding:15px 6px;text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.bottombar a.hi{background:var(--gold);color:var(--ink);font-weight:600}
+
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media(min-width:620px){.fits{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<!-- ══════ 데이터 블록 — 차종이 바뀌면 여기만 교체 ══════ -->
+<script>
+var MODEL = {
+  issue:"AB-2026-GLC01", updated:"2026.07.31",
+  brandLine:"Mercedes-Benz", code:"X254 · MY26 · SUV",
+  titleA:"GLC", titleB:"세 갈래",
+  thesis:"GLC 220 d와 GLC 300 아방가르드의 가격 차이는 30만원입니다. 사실상 같은 값이라는 뜻이고, 그래서 이 문서의 질문은 \"얼마짜리를 살까\"가 아니라 \"무엇이 기본으로 들어 있고, 3년 뒤 지갑이 어떻게 되는가\"입니다.",
+  priceRange:"8,220만 ~ 9,250만", trimCount:"3개 트림",
+
+  ladder:[
+    {
+      tag:"DIESEL · 아방가르드", name:"GLC 220 d 4MATIC", price:8220, branch:true,
+      quick:["OM654M 디젤 197ps","44.9kg·m","14.1km/ℓ · 2등급","235/55 R19"],
+      adds:[], minus:[],
+      note:"AVANTGARDE 익스테리어 · 인테리어 기본. 안트라사이트 라인스트럭쳐 라임 우드 트림, 크리스탈 그레이 루프라이너, 가죽 다기능 스티어링 휠, 컴포트 시트가 이 트림의 기본 조합입니다.",
+      tech:"연비 <strong>14.1km/ℓ · 2등급</strong>은 이 라인업에서 유일합니다. 44.9kg·m 토크도 가솔린보다 4kg·m 이상 높아 고속 정속 주행에서 여유가 다릅니다. 다만 디젤은 DPF 재생이 한 번 시작되면 끝까지 돌아야 해요. 짧은 거리만 반복하면 재생이 중간에 끊기고 그게 쌓입니다. 왕복 20km 이하 출퇴근이 주 용도라면 연비 이점보다 관리 부담이 먼저 옵니다. 애드블루 보충도 주기적으로 들어가고요. 반대로 고속 장거리가 많다면 아래 계산기에서 답이 명확하게 나옵니다."
+    },
+    {
+      tag:"가솔린 · 아방가르드", name:"GLC 300 4MATIC AVANTGARDE", price:8250,
+      quick:["M254 가솔린 258ps","0→100 6.2초","10.8km/ℓ · 4등급","235/55 R19"],
+      adds:[
+        "출력 197ps → 258ps (0→100 8.0초 → 6.2초)",
+        "부메스터® 3D 서라운드 사운드|기본 · 220d는 207만원 유료",
+        "블랙 루프라이너|기본 · 220d는 73만원 유료",
+        "사운드 개인화 기본",
+        "실버 그레이 다이아몬드 패턴 트림 기본"
+      ],
+      minus:["연비 14.1 → 10.8km/ℓ · 2등급에서 4등급으로","최대토크 44.9 → 40.8kg·m"],
+      note:"외관 · 휠 · 타이어 · 시트 · 스티어링 휠은 220 d와 완전히 동일합니다. 30만원의 차이는 오롯이 파워트레인과 세 가지 기본 사양에 있습니다.",
+      tech:"M254 가솔린에 48V 마일드 하이브리드가 붙습니다. 통합 스타터-제너레이터가 시동을 대신 걸어주기 때문에 재시동이 잦은 도심에서 진동과 소음이 확실히 덜해요. 배기 후처리 장치가 없다는 점도 장기 보유 시 신경 쓸 항목이 하나 줄어드는 것입니다. 타이어는 220 d와 같은 235/55 R19라 앞뒤 위치 교환이 되고, 편평비 55라 노면 충격도 타이어가 상당 부분 받아냅니다."
+    },
+    {
+      tag:"가솔린 · AMG LINE", name:"GLC 300 4MATIC AMG Line", price:9250,
+      quick:["M254 가솔린 258ps","20인치 AMG 멀티","255/45 R20 · 285/40 R20","스포츠 시트"],
+      adds:[
+        "AMG Line 익스테리어 + 인테리어 패키지",
+        "AMG 바디스타일링 · 플레어드 휠 아치 · 차량 컬러 휠 아치",
+        "20인치 AMG 멀티 스포크 알로이 휠 (19 → 20인치)",
+        "앞뒤 다른 타이어 규격 — 앞 255/45 R20, 뒤 285/40 R20",
+        "스포츠 시트 (컴포트 시트 대체)",
+        "나파 레더 다기능 스포츠 스티어링 휠",
+        "블랙 오픈포어 알루미늄 라인 우드 트림",
+        "스포티 엔진 사운드",
+        "프론트 액슬 대형 브레이크 디스크|기본 · 하위 트림은 52만원 유료",
+        "AMG 플로어 매트"
+      ],
+      minus:["컴포트 시트 대신 스포츠 시트로 고정","실버 그레이 다이아몬드 패턴 트림 선택 불가"],
+      note:"성능 수치는 GLC 300 아방가르드와 완전히 동일합니다. 258ps, 6.2초, 10.8km/ℓ까지 같아요. 1,000만원은 전부 외관 · 휠 · 실내 마감값입니다. 나이트 패키지(93만원)와 20인치 AMG 멀티 스포크 휠 추가 선택(42만원)은 이 트림에서만 열립니다.",
+      tech:"제원표에서 꼭 보셔야 할 줄이 있습니다. AMG 라인은 <strong>앞 255/45 R20, 뒤 285/40 R20으로 앞뒤 규격이 다릅니다.</strong> 앞뒤 위치 교환이 불가능하다는 뜻이에요. 구동 특성상 뒤가 먼저 닳는데 앞으로 옮겨 쓸 수가 없으니 축 단위로 두 짝씩 따로 교체하게 됩니다. 아방가르드는 앞뒤 모두 235/55 R19라 네 짝을 고르게 쓰다 한 번에 갈 수 있고요. 편평비가 45와 40으로 낮아 포트홀에 휠이 상할 위험도 커집니다. 대신 프론트 대형 브레이크 디스크가 기본으로 들어와 제동 안정성은 한 단계 위입니다."
+    }
+  ],
+
+  calc:{
+    title:"30만원이 실제로는 얼마인가",
+    lead:"GLC 300에 기본으로 들어 있는 사양을 220 d에 붙이면 초기 가격이 뒤집힙니다. 그다음 그 차액을 연비로 언제 되찾는지까지 이어서 계산합니다.",
+    baseTrim:"GLC 220 d 4MATIC", basePrice:8220, baseKm:14.1, baseFuel:"diesel",
+    cmpTrim:"GLC 300 4MATIC AVANTGARDE", cmpPrice:8250, cmpKm:10.8, cmpFuel:"gasoline",
+    options:[
+      {label:"부메스터® 3D 서라운드 사운드 시스템", sub:"15스피커 · 710W · GLC 300은 기본", price:207, on:true},
+      {label:"블랙 루프라이너", sub:"GLC 300은 기본", price:73, on:true},
+      {label:"프론트 액슬 대형 브레이크 디스크", sub:"AMG Line은 기본", price:52, on:false},
+      {label:"20인치 멀티 트윈 스포크 알로이 휠", sub:"19인치 → 20인치", price:154, on:false}
+    ]
+  },
+
+  specCols:["GLC 220 d 4MATIC","GLC 300 AVANTGARDE","GLC 300 AMG Line"],
+  specRows:[
+    ["권장가","8,220만원","8,250만원","9,250만원"],
+    ["전장 / 전폭 / 전고","4,720 / 1,890 / 1,645","4,720 / 1,890 / 1,645","4,720 / 1,890 / 1,645"],
+    ["휠베이스","2,890mm","2,890mm","2,890mm"],
+    ["엔진 / 배기량","OM654M 직4 / 1,993cc","M254 직4 / 1,999cc","M254 직4 / 1,999cc"],
+    ["연료","디젤","가솔린","가솔린"],
+    ["최고출력","197ps / 3,600rpm","258ps / 5,800rpm","258ps / 5,800rpm"],
+    ["최대토크","<b>44.9kg·m</b> / 1,800–2,800","40.8kg·m / 2,000–3,200","40.8kg·m / 2,000–3,200"],
+    ["0 → 100km/h","8.0초","6.2초","6.2초"],
+    ["복합연비","<b>14.1km/ℓ (2등급)</b>","10.8km/ℓ (4등급)","10.8km/ℓ (4등급)"],
+    ["연료탱크","62ℓ","62ℓ","62ℓ"],
+    ["트렁크 용량","620 – 1,680ℓ","620 – 1,680ℓ","620 – 1,680ℓ"],
+    ["변속기","9G-TRONIC","9G-TRONIC","9G-TRONIC"],
+    ["구동","4MATIC 사륜","4MATIC 사륜","4MATIC 사륜"],
+    ["서스펜션","어질리티 컨트롤","어질리티 컨트롤","어질리티 컨트롤"],
+    ["휠","19인치 10트윈 스포크","19인치 10트윈 스포크","20인치 AMG 멀티 스포크"],
+    ["타이어 (앞)","235/55 R19","235/55 R19","<b>255/45 R20</b>"],
+    ["타이어 (뒤)","235/55 R19","235/55 R19","<b>285/40 R20</b>"],
+    ["시트","컴포트 시트","컴포트 시트","스포츠 시트"]
+  ],
+  specNote:"GLC 300 두 트림은 성능 수치가 완전히 동일합니다. 표에서 실제로 갈리는 항목은 휠 · 타이어 · 시트 세 줄뿐이에요. 진짜 갈림길은 220 d와 300 사이에 있습니다.",
+
+  common:[
+    {t:"주행 보조 · 안전", v:"드라이빙 어시스턴스 패키지 플러스 · 액티브 디스턴스 어시스트 디스트로닉 · 교차로 어시스트 포함 디스트로닉 플러스 · 액티브 차선 이탈 방지 · 액티브 차선 변경 어시스트 · 충돌 회피 매뉴버링 서포트 · PRE-SAFE® 시스템 · PRE-SAFE® 임펄스 사이드 · 센터 에어백 · 뒷좌석 사이드백 · 교통 표지판 어시스트 · 운전자 모니터링 카메라 · 액티브 주차 어시스트 · 360° 카메라 주차 패키지 · TPMS · 액티브 보닛"},
+    {t:"라이트", v:"디지털 라이트 · 어댑티브 상향등 어시스트 플러스 · 브랜드 로고 프로젝션 · 앰비언트 라이트 프리미엄"},
+    {t:"인포테인먼트", v:"3세대 MBUX 멀티미디어 · MBUX 내비게이션 프리미엄 · MBUX 증강 현실 내비게이션 · 11.9인치 LCD 센트럴 디스플레이 · 와이드 스크린 콕핏 · 헤드업 디스플레이 · 애플 카플레이 · 안드로이드 오토 · 스마트폰 통합 패키지 · 5G 커뮤니케이션 모듈 · 원격 서비스 어드밴스드 · 스마트폰 디지털키 프리인스톨 · eCall"},
+    {t:"편의", v:"파노라믹 슬라이딩 선루프 · 열 · 소음 차단 글래스 · 공기 청정 패키지 · 앞좌석 열선 및 통풍 시트 · 뒷좌석 열선 시트 · 열선 스티어링 휠 · 운전석 · 동반석 메모리 시트 · 4웨이 요추 지지대 · 뒷좌석 접이식 시트 · 지문 스캐너 · 앞좌석 무선 충전 · 전동 트렁크 · 핸즈 프리 액세스 · 키레스 고 컴포트 패키지 · 톨 정산 시스템 · 윈터 패키지 · 트렁크 패키지 · 레인 센서 · 전동 접이식 사이드 미러"},
+    {t:"파워트레인 · 섀시", v:"9G-TRONIC 자동 9단 변속기 · 4MATIC 상시 사륜구동 · 48V 마일드 하이브리드 · 2세대 통합 스타터-제너레이터 · 어질리티 컨트롤 서스펜션 · 다이내믹 셀렉트"}
+  ],
+
+  paid:[
+    {l:"엔지니어링 패키지", s:"리어 액슬 스티어링 + 에어매틱 선택 조건", p:"571만원"},
+    {l:"20인치 AMG 멀티 스포크 알로이 휠", s:"GLC 220 d 전용", p:"369만원"},
+    {l:"MANUFAKTUR 알파인 그레이", s:"외장 색상", p:"316만원"},
+    {l:"부메스터® 3D 서라운드 사운드", s:"GLC 220 d 전용 · 300은 기본", p:"207만원"},
+    {l:"20인치 멀티 트윈 스포크 알로이 휠", s:"220 d · 300 아방가르드", p:"154만원"},
+    {l:"MANUFAKTUR 오팔라이트 화이트 · 파타고니아 레드", s:"외장 색상", p:"150만원"},
+    {l:"메모리 파킹 어시스트 포함 주차 패키지", s:"", p:"126만원"},
+    {l:"알루미늄 피니시 러닝보드", s:"", p:"97만원"},
+    {l:"나이트 패키지", s:"AMG Line 전용", p:"93만원"},
+    {l:"오프로드 엔지니어링 패키지", s:"", p:"88만원"},
+    {l:"블랙 루프라이너", s:"GLC 220 d 전용 · 300은 기본", p:"73만원"},
+    {l:"레드 시트 벨트", s:"", p:"62만원"},
+    {l:"프론트 액슬 대형 브레이크 디스크", s:"220 d · 300 아방가르드 · AMG Line은 기본", p:"52만원"},
+    {l:"20인치 AMG 멀티 스포크 휠 (RVP)", s:"AMG Line · 나이트 패키지 조건", p:"42만원"},
+    {l:"트랜스포트 프로텍션", s:"MANUFAKTUR 색상 조건", p:"33만원"},
+    {l:"시트 색상 변경", s:"시에나 브라운 · 마키아토 베이지 · 네바 그레이 · 투톤", p:"31만원"},
+    {l:"센터콘솔 변경", s:"크리스 크로스 룩 · 메탈 스트럭쳐", p:"31만원"}
+  ],
+
+  colours:{
+    free:[
+      {n:"하이 테크 실버", c:"#A9AEB2", tag:"기본"},
+      {n:"폴라 화이트", c:"#E9EAEA"},
+      {n:"옵시디안 블랙", c:"#141416"},
+      {n:"그라파이트 그레이", c:"#3B3E42"},
+      {n:"베르데 실버", c:"#5E736E"},
+      {n:"스펙트럴 블루", c:"#1D4E86"}
+    ],
+    paid:[
+      {n:"MANUFAKTUR 오팔라이트 화이트", c:"#DCE0E2", p:"150만원"},
+      {n:"MANUFAKTUR 파타고니아 레드", c:"#8E1522", p:"150만원"},
+      {n:"MANUFAKTUR 알파인 그레이", c:"#8D8F8E", p:"316만원"}
+    ]
+  },
+
+  fits:[
+    {nm:"GLC 220 d 4MATIC", pr:"8,220만원", li:["연 2만km 이상, 고속 장거리 비중이 높은 분","2등급 연비로 유지비를 확실히 낮추려는 분","44.9kg·m 토크의 여유가 필요한 분","단거리 반복 주행이 주 용도가 아닌 분"]},
+    {nm:"GLC 300 4MATIC AVANTGARDE", pr:"8,250만원", li:["도심 주행이 대부분이라 정숙성이 우선인 분","부메스터 사운드를 기본으로 쓰고 싶은 분","외관은 담백한 쪽이 오래 편한 분","19인치 편평비 55의 승차감을 놓치고 싶지 않은 분"]},
+    {nm:"GLC 300 4MATIC AMG Line", pr:"9,250만원", li:["20인치 AMG 휠과 바디스타일링이 선택의 이유인 분","스포츠 시트와 나파 레더 스티어링 휠을 원하는 분","나이트 패키지까지 묶어 완성하고 싶은 분","타이어 유지비를 감안하고도 외관을 택하는 분"]}
+  ]
+};
+
+var ME = {
+  name:"전태규", title:"과장",
+  org:"HS효성더클래스 Mercedes-Benz",
+  halls:"송파전시장 · 스타필드 하남전시장",
+  tel:"010-6233-0311", telRaw:"01062330311",
+  hours:"평일 09:00 – 19:00 · 주말 상담 가능",
+  youtube:"https://www.youtube.com/@benz.jeontaekyu",
+  blog:"https://blog.naver.com/jeon910311",
+  creed:"출고는, 인연의 시작"
+};
+</script>
+
+<!-- ══════ 골격 ══════ -->
+<div class="wrap">
+
+  <div class="docbar">
+    <span>어프로치북 <b id="d-issue"></b></span>
+    <span>최종 갱신 <b id="d-updated"></b></span>
+  </div>
+
+  <header class="hero">
+    <div class="kicker" id="d-kicker"></div>
+    <h1><span id="d-t1"></span><em id="d-t2"></em></h1>
+    <p class="sub" id="d-thesis"></p>
+    <div class="meta">
+      <div><span>Price</span><b id="d-range"></b></div>
+      <div><span>Lineup</span><b id="d-count"></b></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="eyebrow">트림의 계단</div>
+    <h2>무엇이 더 붙고, 무엇이 빠지는가</h2>
+    <p class="lead">아래로 내려갈수록 가격이 올라갑니다. 각 칸에는 바로 윗 트림 대비 <strong>달라지는 것만</strong> 적었습니다. 세 트림이 공통으로 가진 기본 사양은 아래에 따로 모았습니다.</p>
+    <div class="stair" id="d-stair"></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">디젤과 가솔린</div>
+    <h2 id="c-title"></h2>
+    <p class="lead" id="c-lead"></p>
+    <div class="calc">
+      <h3>1 · 옵션을 맞추면</h3>
+      <p class="cx">GLC 300에 기본으로 들어 있는 사양을 220 d에 붙여 보세요.</p>
+      <div id="c-opts"></div>
+
+      <div class="sep"></div>
+
+      <h3>2 · 연비로 되찾는다면</h3>
+      <p class="cx">연간 주행거리를 움직여 보세요. 유가는 직접 수정하실 수 있습니다.</p>
+      <div class="krow"><label>연간 주행거리</label><span class="v"><span id="c-km">20,000</span> km</span></div>
+      <input type="range" id="c-slider" min="5000" max="50000" step="1000" value="20000" aria-label="연간 주행거리">
+
+      <div class="out">
+        <div class="orow"><span class="lab" id="c-l1"></span><span class="amt" id="c-v1"></span></div>
+        <div class="orow"><span class="lab">연간 유류비 차이</span><span class="amt" id="c-v2"></span></div>
+        <div class="orow hi"><span class="lab" id="c-l3"></span><span class="amt" id="c-v3"></span></div>
+      </div>
+      <p class="verdict" id="c-verdict"></p>
+      <p class="assume">
+        가정 — 휘발유 <input type="number" id="c-pg" value="1700">원/ℓ ·
+        경유 <input type="number" id="c-pd" value="1550">원/ℓ ·
+        공인 복합연비(14.1 / 10.8km/ℓ) 기준. 실제 주행 환경과 유가에 따라 달라집니다.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">제원</div>
+    <h2>한 장으로 보는 수치</h2>
+    <p class="lead" id="d-specnote"></p>
+    <div class="scroller">
+      <table><thead><tr id="d-thead"></tr></thead><tbody id="d-tbody"></tbody></table>
+    </div>
+    <p class="hint">← 좌우로 밀어서 비교 · 연비는 표준모드 기준이며 실주행과 차이가 있습니다</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">공통 기본사양</div>
+    <h2>세 트림 모두에 들어갑니다</h2>
+    <p class="lead">아래 항목은 트림 선택과 무관하게 전부 기본입니다. 비교할 때 고민하지 않으셔도 되는 부분입니다.</p>
+    <div id="d-common"></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">주요 유료옵션</div>
+    <h2>더 얹을 수 있는 것들</h2>
+    <p class="lead">금액이 큰 순서입니다. 트림 전용 옵션은 어느 트림에서 열리는지 함께 적었습니다.</p>
+    <div class="spec" style="padding:8px 22px" id="d-paid"></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">외장 색상</div>
+    <h2>추가 비용 없는 여섯 가지</h2>
+    <p class="lead">아래 여섯 색상은 추가 비용이 들지 않습니다. MANUFAKTUR 세 가지만 별도 금액이 붙습니다.</p>
+    <div class="sw" id="d-col-free" style="margin-bottom:26px"></div>
+    <div class="eyebrow" style="margin-bottom:14px">MANUFAKTUR</div>
+    <div class="sw" id="d-col-paid"></div>
+    <p class="hint">스펙트럴 블루와 파타고니아 레드는 시에나 브라운 투톤 인조 가죽과 함께 선택할 수 없습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">트림 선택</div>
+    <h2>이런 분께 맞습니다</h2>
+    <p class="lead">가격과 제원 밖의 기준입니다. 어느 쪽에 더 여러 번 고개가 끄덕여지는지 보세요.</p>
+    <div class="fits" id="d-fits"></div>
+  </section>
+
+  <div class="creed">
+    <q id="d-creed"></q>
+    <div class="by" id="d-by"></div>
+  </div>
+
+  <section style="border-bottom:none">
+    <div class="eyebrow">상담</div>
+    <h2>궁금한 트림 하나만 말씀주세요</h2>
+    <p class="lead">색상 조합, 실구매가, 금융 프로그램, 출고 가능 시기는 이 문서에 넣지 않았습니다. 매달 바뀌는 정보라 문서로 남기면 오히려 틀린 안내가 되기 때문입니다. 연락 주시면 그날 기준으로 정리해 드립니다.</p>
+    <div class="me">
+      <div class="nm" id="m-name"></div>
+      <div class="rl" id="m-role"></div>
+      <div class="tel" id="m-tel"></div>
+      <div class="hr" id="m-hours"></div>
+      <div class="acts">
+        <a class="act pri" id="m-call"><b>전화로 바로 상담</b><span>탭하면 연결</span></a>
+        <a class="act" id="m-yt" target="_blank" rel="noopener"><b>유튜브 채널</b><span>출고 · 리뷰 영상</span></a>
+        <a class="act" id="m-blog" target="_blank" rel="noopener"><b>네이버 블로그</b><span>출고기 · 프로모션 정리</span></a>
+      </div>
+      <div class="halls" id="m-halls"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p><b id="f-title"></b></p>
+    <p id="f-note"></p>
+  </footer>
+</div>
+
+<nav class="bottombar">
+  <a href="#" id="b-yt">YouTube</a>
+  <a href="#" id="b-blog">Blog</a>
+  <a href="#" id="b-call" class="hi">전화 상담</a>
+</nav>
+
+<script>
+/* ══════ 렌더링 엔진 — 차종이 바뀌어도 수정 불필요 ══════ */
+function $(id){ return document.getElementById(id); }
+function c(n){ return n.toLocaleString('ko-KR'); }
+function man(n){
+  return n >= 10000
+    ? (Math.floor(n/10000) + '억 ' + (n%10000 ? c(n%10000)+'만' : '') + '원').replace(/\s+/g,' ').trim()
+    : c(n) + '만원';
+}
+
+$('d-issue').textContent   = MODEL.issue;
+$('d-updated').textContent = MODEL.updated;
+$('d-kicker').textContent  = MODEL.brandLine + ' · ' + MODEL.code;
+$('d-t1').textContent      = MODEL.titleA;
+$('d-t2').textContent      = MODEL.titleB;
+$('d-thesis').textContent  = MODEL.thesis;
+$('d-range').textContent   = MODEL.priceRange;
+$('d-count').textContent   = MODEL.trimCount;
+$('d-specnote').textContent= MODEL.specNote;
+
+/* 계단 */
+$('d-stair').innerHTML = MODEL.ladder.map(function(t,i){
+  var prev = MODEL.ladder[i-1];
+  var d = prev ? t.price - prev.price : 0;
+  var delta = prev
+    ? '<span class="delta' + (t.branch?' b':'') + '">↓ +' + c(d) + '만원</span>'
+    : '<span class="delta' + (t.branch?' b':'') + '">시작점</span>';
+  function list(arr,cls){
+    if(!arr.length) return '';
+    return '<div class="blk ' + cls + '"><h4>' + (cls==='minus'?'대신 빠지는 것':'추가되는 것') + '</h4><ul>' +
+      arr.map(function(x){
+        var p = x.split('|');
+        return '<li>' + p[0] + (p[1] ? '<span class="only">' + p[1] + '</span>' : '') + '</li>';
+      }).join('') + '</ul></div>';
+  }
+  return '<div class="step rv' + (t.branch?' branch':'') + '">' + delta +
+    '<div class="card">' +
+      '<div class="tag">' + t.tag + '</div>' +
+      '<div class="name">' + t.name + '</div>' +
+      '<div class="price">' + man(t.price) + '</div>' +
+      '<div class="chips">' + t.quick.map(function(q){return '<span class="chip">'+q+'</span>';}).join('') + '</div>' +
+      list(t.adds,'plus') + list(t.minus,'minus') +
+      (t.note ? '<div class="blk"><h4>참고</h4><p>' + t.note + '</p></div>' : '') +
+      '<div class="tech"><span class="lbl">정비사의 시선</span><p>' + t.tech + '</p></div>' +
+    '</div></div>';
+}).join('');
+
+/* 계산기 */
+var C = MODEL.calc;
+$('c-title').textContent = C.title;
+$('c-lead').textContent  = C.lead;
+$('c-opts').innerHTML = C.options.map(function(o,i){
+  return '<label class="opt"><input type="checkbox" data-i="' + i + '"' + (o.on?' checked':'') + '>' +
+         '<span class="t">' + o.label + '<small>' + o.sub + '</small></span>' +
+         '<span class="p">+' + o.price + '만</span></label>';
+}).join('');
+
+function runCalc(){
+  var km = +$('c-slider').value;
+  var pg = +$('c-pg').value || 0;
+  var pd = +$('c-pd').value || 0;
+  var add = 0;
+  C.options.forEach(function(o,i){
+    if(document.querySelector('[data-i="' + i + '"]').checked) add += o.price;
+  });
+  var baseTotal = C.basePrice + add;
+  var diff = baseTotal - C.cmpPrice;                       // 만원, 양수면 220d가 더 비쌈
+  var costBase = km / C.baseKm * (C.baseFuel === 'diesel' ? pd : pg);
+  var costCmp  = km / C.cmpKm  * (C.cmpFuel  === 'diesel' ? pd : pg);
+  var save = costCmp - costBase;                            // 원/년, 양수면 220d가 아낌
+
+  $('c-km').textContent = c(km);
+  $('c-l1').textContent = '초기 차액 — ' + (diff >= 0 ? '220 d가 더 비쌈' : '220 d가 더 저렴');
+  $('c-v1').textContent = c(Math.abs(diff)) + '만';
+  $('c-v2').textContent = c(Math.round(Math.abs(save)/10000)) + '만';
+
+  if(diff > 0 && save > 0){
+    var yrs = (diff * 10000) / save;
+    $('c-l3').textContent = '차액 회수 시점';
+    $('c-v3').textContent = yrs.toFixed(1) + '년';
+    $('c-verdict').textContent =
+      '옵션을 맞추면 220 d가 ' + c(diff) + '만원 비싸지지만, 연 ' + c(km) + 'km를 달리면 유류비로 매년 약 ' +
+      c(Math.round(save/10000)) + '만원을 아낍니다. 약 ' + yrs.toFixed(1) + '년이면 차액을 되찾고, 그 뒤로는 계속 유리해집니다. ' +
+      '즉 이 주행거리에서 디젤을 고르는 근거는 가격표가 아니라 보유 기간입니다.';
+  } else if(diff <= 0 && save > 0){
+    $('c-l3').textContent = '3년 누적 이득';
+    $('c-v3').textContent = c(Math.round((Math.abs(diff)*10000 + save*3)/10000)) + '만';
+    $('c-verdict').textContent =
+      '지금 조합에서는 220 d가 초기 가격도 ' + c(Math.abs(diff)) + '만원 저렴하고 유류비도 매년 약 ' +
+      c(Math.round(save/10000)) + '만원 덜 듭니다. 다만 부메스터처럼 300에 기본으로 들어 있는 사양을 붙이면 이 계산은 금방 뒤집힙니다.';
+  } else {
+    $('c-l3').textContent = '차액 회수 시점';
+    $('c-v3').textContent = '해당 없음';
+    $('c-verdict').textContent =
+      '이 조건에서는 220 d의 연비 이점이 초기 차액을 되돌리지 못합니다. 주행거리를 늘려 손익분기가 어디인지 확인해 보세요.';
+  }
+}
+['c-slider','c-pg','c-pd'].forEach(function(id){ $(id).addEventListener('input', runCalc); });
+document.querySelectorAll('.opt input').forEach(function(el){ el.addEventListener('change', runCalc); });
+runCalc();
+
+/* 제원표 */
+$('d-thead').innerHTML = '<th>항목</th>' + MODEL.specCols.map(function(x){return '<th>'+x+'</th>';}).join('');
+$('d-tbody').innerHTML = MODEL.specRows.map(function(r){
+  return '<tr><th>' + r[0] + '</th>' + r.slice(1).map(function(v){return '<td>'+v+'</td>';}).join('') + '</tr>';
+}).join('');
+
+/* 공통사양 */
+$('d-common').innerHTML = MODEL.common.map(function(g){
+  return '<div class="spec rv"><h4>' + g.t + '</h4><p>' + g.v + '</p></div>';
+}).join('');
+
+/* 유료옵션 */
+$('d-paid').innerHTML = MODEL.paid.map(function(o){
+  return '<div class="pay"><span class="l">' + o.l + (o.s ? '<small>'+o.s+'</small>' : '') +
+         '</span><span class="r">' + o.p + '</span></div>';
+}).join('');
+
+/* 색상 */
+function swatch(arr){
+  return arr.map(function(x){
+    return '<div><i style="background:' + x.c + '"></i><span>' + x.n + '</span>' +
+      (x.p ? '<em>'+x.p+'</em>' : (x.tag ? '<em>'+x.tag+'</em>' : '')) + '</div>';
+  }).join('');
+}
+$('d-col-free').innerHTML = swatch(MODEL.colours.free);
+$('d-col-paid').innerHTML = swatch(MODEL.colours.paid);
+
+/* 추천 */
+$('d-fits').innerHTML = MODEL.fits.map(function(f){
+  return '<div class="fit rv"><div class="nm">' + f.nm + '</div><div class="pr">' + f.pr + '</div><ul>' +
+    f.li.map(function(x){return '<li>'+x+'</li>';}).join('') + '</ul></div>';
+}).join('');
+
+/* 프로필 */
+$('d-creed').innerHTML   = ME.creed.replace('인연','<em>인연</em>');
+$('d-by').textContent    = ME.org + ' · ' + ME.name + ' ' + ME.title;
+$('m-name').textContent  = ME.name + ' ' + ME.title;
+$('m-role').textContent  = ME.org;
+$('m-tel').textContent   = ME.tel;
+$('m-hours').textContent = ME.hours;
+$('m-halls').innerHTML   = ME.halls + '<br>두 곳 모두 상담 및 출고 가능합니다.';
+$('m-call').href = $('b-call').href = 'tel:' + ME.telRaw;
+$('m-yt').href   = $('b-yt').href   = ME.youtube;
+$('m-blog').href = $('b-blog').href = ME.blog;
+$('f-title').textContent = MODEL.brandLine + ' ' + MODEL.titleA + ' ' + MODEL.code + ' 어프로치북 · 고객 전달용';
+$('f-note').textContent  = '본 자료는 MY26 공식 가격표 · 옵션표 및 제원표를 바탕으로 ' + MODEL.updated + '에 정리했습니다. 가격 · 사양 · 옵션 구성은 사전 예고 없이 변경될 수 있으며, 실제 계약 시에는 공식 가격표와 본사 정책이 우선 적용됩니다. 표기 금액은 부가세 포함 기준입니다. © ' + ME.org + ' ' + ME.name;
+
+/* 리빌 */
+var io = new IntersectionObserver(function(es){
+  es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); }});
+},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>
