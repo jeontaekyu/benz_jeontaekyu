@@ -333,6 +333,10 @@ section{padding:40px 0 6px}
 .fixbar a{flex:1;text-align:center;padding:15px 0;font-size:13.5px;font-weight:600;color:var(--txt);text-decoration:none}
 .fixbar a + a{border-left:1px solid var(--line2)}
 .fixbar a.gold{color:#0a0a0c;background:var(--gold)}
+
+/* — 페이지 전체 워터마크 — */
+body::before{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22340%22%20height%3D%22220%22%3E%0A%3Cg%20transform%3D%22rotate%28-18%20170%20110%29%22%20fill%3D%22%23C7A868%22%20fill-opacity%3D%220.08%22%0A%20%20%20font-family%3D%22Pretendard%2C%20sans-serif%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3E%0A%3Ctext%20x%3D%22170%22%20y%3D%22100%22%20font-size%3D%2220%22%3E%EC%A0%84%ED%83%9C%EA%B7%9C%20%EA%B3%BC%EC%9E%A5%3C/text%3E%0A%3Ctext%20x%3D%22170%22%20y%3D%22128%22%20font-size%3D%2217%22%3E010-6233-0311%3C/text%3E%0A%3C/g%3E%3C/svg%3E");background-repeat:repeat}
 </style>
 </head>
 <body>
