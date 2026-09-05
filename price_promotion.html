@@ -230,9 +230,9 @@ const PROMO = {
 
 <!-- ═══════ ② 렌더링 엔진 ═══════ -->
 <style>
-:root{--bg:#08080A;--panel:#101013;--panel2:#141418;--line:rgba(199,168,104,.18);
-  --line2:rgba(255,255,255,.07);--gold:#C7A868;--gold-dim:rgba(199,168,104,.55);
-  --txt:#EDEAE2;--sub:#9A9689;--faint:#5E5B52;--need:#7A6A45}
+:root{--bg:#F7F4EE;--panel:#FFFFFF;--panel2:#F0ECE3;--line:rgba(168,135,74,.18);
+  --line2:rgba(29,28,25,.07);--gold:#A8874A;--gold-dim:rgba(168,135,74,.55);
+  --txt:#1D1C19;--sub:#5B5952;--faint:#8C8980;--need:#A8874A}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--txt);font-family:'Pretendard Variable',Pretendard,sans-serif;
@@ -250,10 +250,10 @@ body{background:var(--bg);color:var(--txt);font-family:'Pretendard Variable',Pre
 .hero .avatar{width:104px;height:104px;border-radius:50%;border:2px solid var(--gold);
   margin:0 auto 18px;overflow:hidden;display:flex;align-items:center;justify-content:center;
   background:var(--panel2);font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:600;
-  color:var(--gold);box-shadow:0 0 0 6px rgba(199,168,104,.08)}
+  color:var(--gold);box-shadow:0 0 0 6px rgba(168,135,74,.08)}
 .hero .avatar img{width:100%;height:100%;object-fit:cover}
 .hero .eyebrow{font-size:12px;letter-spacing:.35em;color:var(--gold-dim);text-transform:uppercase}
-.hero h1{font-size:clamp(38px,8.5vw,58px);font-weight:600;line-height:1.08;margin:12px 0 6px;color:#fff}
+.hero h1{font-size:clamp(38px,8.5vw,58px);font-weight:600;line-height:1.08;margin:12px 0 6px;color:#1D1C19}
 .hero h1 em{font-style:normal;color:var(--gold)}
 .hero .month{font-size:14px;color:var(--sub);letter-spacing:.2em}
 .hero .thesis{max-width:580px;margin:22px auto 0;color:var(--sub);font-size:14.5px;text-align:left;
@@ -263,7 +263,7 @@ body{background:var(--bg);color:var(--txt);font-family:'Pretendard Variable',Pre
 .hero-band img{width:100%;display:block;opacity:.92}
 
 /* ── 스티키 네비 ── */
-.nav{position:sticky;top:0;z-index:50;background:rgba(8,8,10,.92);backdrop-filter:blur(10px);
+.nav{position:sticky;top:0;z-index:50;background:rgba(247,244,238,.92);backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line2)}
 .nav-inner{display:flex;gap:8px;overflow-x:auto;padding:10px 20px;max-width:820px;margin:0 auto;scrollbar-width:none}
 .nav-inner::-webkit-scrollbar{display:none}
@@ -273,7 +273,7 @@ body{background:var(--bg);color:var(--txt);font-family:'Pretendard Variable',Pre
 
 section{padding:40px 0 6px}
 .sec-eyebrow{font-size:11px;letter-spacing:.3em;color:var(--gold-dim);text-transform:uppercase}
-.sec-title{font-size:25px;font-weight:600;color:#fff;margin:6px 0 4px}
+.sec-title{font-size:25px;font-weight:600;color:#1D1C19;margin:6px 0 4px}
 .sec-sub{font-size:13.5px;color:var(--sub);margin-bottom:18px}
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
@@ -284,7 +284,7 @@ section{padding:40px 0 6px}
 @media(min-width:640px){.camp-grid{grid-template-columns:1fr 1fr}}
 .camp{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
 .camp .tag{font-size:11px;letter-spacing:.25em;color:var(--gold-dim)}
-.camp h3{font-size:16.5px;color:#fff;margin:7px 0 5px}
+.camp h3{font-size:16.5px;color:#1D1C19;margin:7px 0 5px}
 .camp p{font-size:13.5px;color:var(--sub)}
 
 /* ── 추가할인 셀프 체크 ── */
@@ -293,7 +293,7 @@ section{padding:40px 0 6px}
   border:1px solid var(--line2);border-radius:10px;padding:13px 16px;cursor:pointer;
   transition:border-color .2s, background .2s;user-select:none}
 .check:hover{border-color:var(--line)}
-.check.on{border-color:var(--gold);background:rgba(199,168,104,.06)}
+.check.on{border-color:var(--gold);background:rgba(168,135,74,.06)}
 .check .pct{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:600;
   color:var(--faint);min-width:52px;text-align:center;transition:color .2s}
 .check.on .pct{color:var(--gold)}
@@ -314,7 +314,7 @@ section{padding:40px 0 6px}
 .rows summary:hover{background:var(--panel2)}
 .rows details.mbm summary{box-shadow:inset 3px 0 0 var(--gold)}
 .rnm{flex:1;min-width:0}
-.rnm b{font-size:14px;color:#fff;font-weight:600;display:block;line-height:1.35}
+.rnm b{font-size:14px;color:#1D1C19;font-weight:600;display:block;line-height:1.35}
 .rtag{display:inline-block;font-size:9.5px;font-weight:600;letter-spacing:.08em;
   border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:var(--gold);margin:2px 4px 0 0}
 .rtag.dim{color:var(--sub);border-color:var(--line2)}
@@ -344,7 +344,7 @@ section{padding:40px 0 6px}
 
 /* ── 신조 & CTA ── */
 .creed{text-align:center;padding:64px 0 44px}
-.creed p{font-size:clamp(22px,5vw,30px);font-weight:600;color:#fff;line-height:1.4}
+.creed p{font-size:clamp(22px,5vw,30px);font-weight:600;color:#1D1C19;line-height:1.4}
 .creed p em{font-style:normal;color:var(--gold)}
 .creed .sub{font-size:13.5px;color:var(--sub);margin-top:12px}
 .cta{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:26px 22px;text-align:center}
@@ -354,7 +354,7 @@ section{padding:40px 0 6px}
   font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:600;color:var(--gold)}
 .avatar-s img{width:100%;height:100%;object-fit:cover}
 .profile .pr-name{text-align:left}
-.profile .pr-name b{display:block;font-size:16px;color:#fff}
+.profile .pr-name b{display:block;font-size:16px;color:#1D1C19}
 .profile .pr-name span{font-size:12px;color:var(--sub)}
 .cta .who{font-size:13px;color:var(--sub)}
 .cta .tel{font-family:'Barlow Condensed',sans-serif;font-size:34px;font-weight:600;color:var(--gold);
@@ -393,7 +393,7 @@ section{padding:40px 0 6px}
   background:rgba(12,12,14,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
 .fixbar a{flex:1;text-align:center;padding:15px 0;font-size:13.5px;font-weight:600;color:var(--txt);text-decoration:none}
 .fixbar a + a{border-left:1px solid var(--line2)}
-.fixbar a.gold{color:#0a0a0c;background:var(--gold)}
+.fixbar a.gold{color:#F7F4EE;background:var(--gold)}
 
 /* — 페이지 전체 워터마크 — */
 body::before{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;
