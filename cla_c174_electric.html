@@ -346,6 +346,36 @@ section::before{height:170px;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,
 }
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ===== USP: 이 차만의 것 ===== */
+.usp-hero{display:grid;grid-template-columns:1fr 320px;gap:32px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:30px 32px;box-shadow:0 1px 2px rgba(40,30,10,.04)}
+.usp-hero .big{font-family:var(--num);font-weight:600;font-size:46px;line-height:1.05;letter-spacing:-.01em}
+.usp-hero .big b{color:var(--gold);font-weight:700}
+.usp-hero .sub{margin-top:12px;color:var(--tx2);font-size:15px}
+.usp-hero .cond{margin-top:12px;font-size:12px;color:var(--tx3)}
+.usp-list{margin-top:12px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;box-shadow:0 1px 2px rgba(40,30,10,.04);overflow:hidden}
+.usp-row{display:grid;grid-template-columns:190px 170px 1fr;gap:24px;padding:20px 32px;border-top:1px solid var(--line);align-items:center}
+.usp-row:first-child{border-top:0}
+.usp-row .f{font-family:var(--num);font-weight:600;font-size:28px;line-height:1.1}
+.usp-row .f small{display:block;font-family:var(--body);font-size:12px;color:var(--tx3);margin-top:5px;font-weight:400;line-height:1.4}
+.usp-row .t{font-size:15px;color:var(--tx)}
+.usp-row .t .s{display:block;margin-top:6px;color:var(--gold2);font-size:14px}
+.usp-row .t .n{display:block;margin-top:5px;color:var(--tx3);font-size:12px}
+.usp-row svg text{font-family:var(--num)}
+.usp-row .k,.usp-hero .k{stroke:var(--tx);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.usp-row .g,.usp-hero .g{stroke:var(--gold);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.usp-row .gf,.usp-hero .gf{fill:var(--gold)}
+.usp-row .gs{fill:var(--gold-dim)}
+.usp-row .ln,.usp-hero .ln{stroke:var(--line2);fill:none;stroke-width:1}
+.usp-row .lb,.usp-hero .lb{font-size:10px;fill:var(--tx3);letter-spacing:.04em}
+.usp-row .nm,.usp-hero .nm{font-size:12px;fill:var(--gold2);font-weight:600;letter-spacing:.03em}
+@media (max-width:760px){
+  .usp-hero{grid-template-columns:1fr;padding:22px 20px}
+  .usp-hero .big{font-size:36px}
+  .usp-row{grid-template-columns:1fr;gap:10px;padding:18px 20px}
+  .usp-row .art{max-width:230px}
+  .usp-row .f{font-size:26px}
+}
 </style>
 </head>
 <body>
@@ -477,10 +507,40 @@ const ME = {
   </div>
 </section>
 
+<!-- USP -->
+<section id="usp">
+  <div class="wrap">
+    <h2><small>05 · 이 차만의 것</small>다른 전기차 옆에 놓아도 CLA에만 남는 것</h2>
+    <p class="lead">스펙표에 있는 건 뺐습니다. 테슬라·아이오닉과 나란히 세워 두고 비교했을 때 이 차에만 남는 것들입니다.</p>
+
+    <div class="usp-hero mt">
+      <div>
+        <div class="big">충전 <b>10분</b>에 약 <b>300 km</b></div>
+        <p class="sub">5천만 원대 수입 전기차 중 유일한 800V 시스템. 커피 한 잔 마시는 사이에 서울에서 대전까지 갈 거리가 채워집니다.</p>
+        <p class="cond">350kW급 급속 충전기 · 250+ · WLTP 기준</p>
+      </div>
+      <svg viewBox="0 0 340 200" role="img" aria-label="10분 충전 300km 게이지">
+        <path class="ln" d="M40 160 A130 130 0 0 1 300 160" stroke-width="10"/>
+        <path class="g" d="M40 160 A130 130 0 0 1 178 30" stroke-width="10"/>
+        <circle class="gf" cx="178" cy="30" r="6"/>
+        <text x="170" y="118" text-anchor="middle" font-family="var(--num)" font-size="46" font-weight="600" fill="var(--tx)">300</text>
+        <text x="170" y="140" text-anchor="middle" class="lb" font-size="12">km 추가</text>
+        <text x="40" y="184" text-anchor="middle" class="lb">0분</text>
+        <text x="178" y="18" text-anchor="middle" class="nm">10분</text>
+        <text x="300" y="184" text-anchor="middle" class="lb">30분</text>
+        <text x="170" y="176" text-anchor="middle" class="nm" font-size="11">800V · DC 최대 320kW</text>
+      </svg>
+    </div>
+
+    <div class="usp-list" id="usp-list"></div>
+    <p class="note">주행거리·전비는 독일 WLTP 기준이며 국내 인증치는 출시 시 별도 안내됩니다. 프렁크 101L는 액체 기준 용량입니다.</p>
+  </div>
+</section>
+
 <!-- COLORS -->
 <section id="colors">
   <div class="wrap">
-    <h2><small>05 · 컬러 · 휠 · 내장</small>컬러가 트림을 정하는 경우가 많습니다</h2>
+    <h2><small>06 · 컬러 · 휠 · 내장</small>컬러가 트림을 정하는 경우가 많습니다</h2>
     <p class="lead">외장 6종 모두 추가 비용이 없지만, Progressive 3종과 AMG Line 3종은 서로 넘어갈 수 없습니다. 원하는 색이 AMG 쪽이면 트림은 거기서 정해집니다.</p>
 
     <div class="zoom mt" data-full="images/colors.jpg" data-cap="외장 컬러 6종 · MBK 카탈로그"><img class="photo" src="images/colors.jpg" alt="CLA electric 외장 컬러 6종" loading="lazy"></div>
@@ -535,7 +595,7 @@ const ME = {
 <!-- RECOMMEND -->
 <section id="fit">
   <div class="wrap">
-    <h2><small>06 · 그래서 나는 어디?</small>트림별로 맞는 분</h2>
+    <h2><small>07 · 그래서 나는 어디?</small>트림별로 맞는 분</h2>
     <p class="lead">대부분 Advanced 아니면 250+에서 갈립니다. 화이트를 원하면 Progressive, 컬러 있는 차를 원하면 AMG Line, 장거리가 잦으면 250+입니다.</p>
     <div class="rec mt" id="rec"></div>
   </div>
@@ -544,7 +604,7 @@ const ME = {
 <!-- BOOKING -->
 <section id="booking">
   <div class="wrap">
-    <h2><small>07 · 사전예약</small>예약 전에 정할 것 세 가지</h2>
+    <h2><small>08 · 사전예약</small>예약 전에 정할 것 세 가지</h2>
     <p class="lead">사전예약 시점에 모델·외장·내장을 함께 접수합니다. 위에서 정한 조합을 그대로 가져오시면 됩니다.</p>
     <div class="book mt">
       <div class="fig">
@@ -567,7 +627,7 @@ const ME = {
 <!-- CONTACT -->
 <section id="contact">
   <div class="wrap">
-    <h2><small>08 · 상담</small>트림·컬러 조합, 같이 정해드립니다</h2>
+    <h2><small>09 · 상담</small>트림·컬러 조합, 같이 정해드립니다</h2>
     <p class="lead">사전예약 순번이 초기 출고를 좌우합니다. 주행 패턴과 충전 환경 알려주시면 200/250+부터 같이 정합니다.</p>
     <div class="me mt" id="me"></div>
   </div>
@@ -744,6 +804,28 @@ const ME = {
     주행거리·충전 시간·전비는 WLTP 및 제조사 발표 수치로, 국내 환경부 인증 수치와 다를 수 있습니다. 사양·가격은 본사 정책에 따라 예고 없이 변경될 수 있습니다.<br>
     차량 사진은 Mercedes-Benz Korea 공식 카탈로그(2026.09.01, 27년식 기준)의 이미지이며 실제 판매 차량과 옵션·사양이 다를 수 있습니다. 그 외 그래픽은 설명용입니다. 실차는 ${ME.showrooms}에서 확인하실 수 있습니다.<br>
     © ${ME.name} · ${ME.handle}`;
+})();
+
+/* ===== USP data + art ===== */
+(function(){
+  const SEDAN = `<path class="k" d="M8 62 C10 52 20 46 44 44 L70 41 C88 27 110 21 140 22 L172 25 C190 27 204 34 214 44 L226 50 C232 53 233 60 230 63 L8 62 Z"/><path class="k" d="M72 41 L84 30 L132 26 L146 41 Z"/><path class="k" d="M150 41 L146 27 L172 29 L184 41 Z"/><circle class="k" cx="58" cy="64" r="13" fill="var(--bg2)"/><circle class="k" cx="58" cy="64" r="5"/><circle class="k" cx="184" cy="64" r="13" fill="var(--bg2)"/><circle class="k" cx="184" cy="64" r="5"/>`;
+  const ART = {
+    range:`<svg viewBox="0 0 240 110">${SEDAN}<path class="g" d="M10 24 C60 20 90 14 130 16" stroke-dasharray="3 5"/><path class="g" d="M14 34 C60 30 100 22 150 20" stroke-dasharray="3 5"/><text x="8" y="14" class="nm">Cd 0.21</text><line class="ln" x1="8" y1="100" x2="232" y2="100" stroke-width="4"/><line class="g" x1="8" y1="100" x2="232" y2="100" stroke-width="4"/><text x="232" y="92" text-anchor="end" class="nm">792km · 12.2kWh/100km</text></svg>`,
+    rwd:`<svg viewBox="0 0 240 110">${SEDAN}<circle class="gs" cx="184" cy="64" r="13"/><circle class="g" cx="184" cy="64" r="13"/><path class="g" d="M170 96 L100 96" stroke-width="2"/><path class="gf" d="M100 96 L108 91 L108 101 Z"/><text x="176" y="106" class="nm">뒤에서 밉니다</text><circle class="g" cx="22" cy="18" r="9"/><circle class="g" cx="38" cy="18" r="6"/><text x="52" y="22" class="lb">2단</text></svg>`,
+    price:`<svg viewBox="0 0 240 110"><text x="8" y="22" class="lb">AMG Line 기준</text><rect class="gs" x="8" y="34" width="190" height="20"/><rect class="gf" x="8" y="34" width="4" height="20"/><text x="14" y="48" font-size="12" fill="var(--tx)" font-weight="600">전기 5,890만</text><rect class="ln" x="8" y="66" width="203" height="20" fill="none"/><text x="14" y="80" font-size="12" fill="var(--tx3)">가솔린 220 6,290만</text><path class="g" d="M198 44 L211 44"/><text x="216" y="48" class="nm">−400</text></svg>`,
+    frunk:`<svg viewBox="0 0 240 110">${SEDAN}<path class="gs" d="M14 60 L20 48 L64 43 L70 58 Z"/><path class="g" d="M14 60 L20 48 L64 43 L70 58 Z"/><path class="gs" d="M186 42 L212 46 L226 56 L222 60 L192 58 Z"/><path class="g" d="M186 42 L212 46 L226 56 L222 60 L192 58 Z"/><text x="42" y="104" text-anchor="middle" class="nm">앞 101L</text><text x="206" y="104" text-anchor="middle" class="nm">뒤 405L</text><line class="ln" x1="42" y1="62" x2="42" y2="92"/><line class="ln" x1="206" y1="62" x2="206" y2="92"/></svg>`,
+    wb:`<svg viewBox="0 0 240 110">${SEDAN}<line class="k" x1="58" y1="80" x2="58" y2="102" stroke-dasharray="2 3"/><line class="k" x1="184" y1="80" x2="184" y2="102" stroke-dasharray="2 3"/><line class="g" x1="58" y1="98" x2="184" y2="98"/><path class="gf" d="M58 98 L65 94 L65 102 Z"/><path class="gf" d="M184 98 L177 94 L177 102 Z"/><text x="121" y="94" text-anchor="middle" class="nm">2,790mm</text></svg>`,
+    roof:`<svg viewBox="0 0 240 110"><rect class="k" x="60" y="10" width="120" height="90" rx="26"/><rect class="gs" x="76" y="22" width="88" height="66" rx="14"/><rect class="g" x="76" y="22" width="88" height="66" rx="14"/>${[...Array(5)].map((_,r)=>[...Array(6)].map((_,c)=>`<circle class="gf" cx="${88+c*12.8}" cy="${33+r*11}" r="1.2"/>`).join('')).join('')}<text x="8" y="60" class="lb">파노라믹 루프</text><text x="232" y="60" text-anchor="end" class="lb">전 트림</text></svg>`
+  };
+  const USP = [
+    {art:'range',f:'792 km',u:'1회 충전 · 250+ · WLTP',t:'배터리가 커서가 아닙니다. 100km에 12.2kWh만 쓰는 전비와 공기저항 0.21, 2단 변속기가 만든 숫자입니다.',s:'"배터리 큰 차"가 아니라 "적게 쓰는 차"로 설명'},
+    {art:'rwd',f:'후륜구동',u:'+ 2단 변속기',t:'전기차 전용 바닥(MMA)이라 뒤에서 밉니다. 고속에서는 2단이 물려 전비와 정숙성을 같이 가져갑니다.',s:'핸들링에 민감한 분, 벤츠 후륜을 기대하는 분께'},
+    {art:'price',f:'5,290만',u:'200 Essential 시작가 · 부가세 포함',t:'같은 AMG Line끼리 놓으면 전기차 5,890만, 가솔린 220 6,290만. 전기차가 400만 원 저렴한 드문 경우입니다.',s:'보조금 전 가격. 보조금은 확정 후 별도 안내'},
+    {art:'frunk',f:'101 L',u:'프렁크 · 전 트림',t:'충전 케이블, 젖은 우산, 세차용품을 실내에 들이지 않아도 됩니다. 벤츠 전기차에 프렁크가 생긴 첫 차입니다.',s:'트렁크 405L와 합쳐 "짐 공간 두 곳"으로 설명'},
+    {art:'wb',f:'2,790 mm',u:'휠베이스 · 전장 4,723 · 전폭 1,855 · 전고 1,468',t:'전기차 바닥 덕에 바퀴 사이를 길게 잡았습니다. 차 길이는 콤팩트 세단 그대로인데 뒷좌석 무릎 공간은 한 급 위로 갑니다.',s:'C클래스 휠베이스 2,865과 75mm 차이 — C 타보신 분도 뒷좌석 좁다는 말이 안 나옵니다'},
+    {art:'roof',f:'전 트림 기본',u:'파노라믹 루프 · 142스타 패널 · 히트펌프',t:'이 가격대 전기차에서 실내 완성도로 갈리는 부분. 옵션이 아니라 Essential부터 들어 있습니다.',s:'테슬라·아이오닉에서 넘어오시는 분께 가장 먼저 보여드릴 것'}
+  ];
+  document.getElementById('usp-list').innerHTML = USP.map(u=>`<div class="usp-row"><div class="art">${ART[u.art]}</div><div class="f">${u.f}<small>${u.u}</small></div><div class="t">${u.t}<span class="s">${u.s}</span></div></div>`).join('');
 })();
 </script>
 </body>
