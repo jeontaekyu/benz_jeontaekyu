@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>140주년 에디션 II — GLE · GLE Coupé · GLS 580 어프로치북 | 전태규 과장</title>
 <meta name="description" content="메르세데스-벤츠 140주년 에디션 II. GLE 450 4MATIC AMG Line 1억 4,140만(350대) · GLE 450 Coupé 1억 4,540만(230대) · GLS 580 4MATIC Final edition 1억 9,900만(100대). 에디션 패키지가 더한 것, 왜 지금인가.">
-<meta property="og:title" content="140주년 에디션 II — 컬러 에디션 3부작의 마지막">
-<meta property="og:description" content="알파인 그레이 · 나이트 패키지 · 블랙 휠 · 나파 시트. GLE 350대, GLE Coupé 230대, GLS 580 100대.">
+<meta property="og:title" content="140주년 에디션 II — GLE · GLE Coupé · GLS 580 Final">
+<meta property="og:description" content="알파인 그레이 · 블랙 휠 · 나파 시트 · 다크크롬 디테일. GLE 350대, GLE Coupé 230대, GLS 580 100대.">
 <meta property="og:image" content="https://jeontaekyu.github.io/benz_jeontaekyu/images/hero_wide.jpg">
 <meta property="og:url" content="https://jeontaekyu.github.io/benz_jeontaekyu/edition140_two">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -165,9 +165,26 @@ table.cmp th:first-child,table.cmp td:first-child{position:sticky;left:0;backgro
 .value div{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:14.5px;align-items:baseline}
 .value div.h{font-size:12px;color:var(--ink-3)}
 .value div span:nth-child(n+2){font-family:var(--serif);font-weight:500}
-.value div span:last-child{color:var(--gold);font-weight:600}
+.value div span:last-child{color:var(--ink);font-weight:600}
 @media(max-width:860px){.why{grid-template-columns:1fr}.value div{grid-template-columns:1fr 1fr;font-size:13.5px}.value div span:first-child{grid-column:1/-1;font-weight:600}}
 
+/* promo */
+.promo{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pcard{background:var(--paper-2);border:1px solid var(--line);padding:24px 24px 20px}
+.pcard.final{border-color:var(--gold)}
+.pcard .pn{font-family:var(--serif);font-size:18px;font-weight:600;line-height:1.3;min-height:48px}
+.pcard dl{margin-top:14px;font-size:14.5px}
+.pcard dl div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px dashed var(--line)}
+.pcard dt{color:var(--ink-3)}
+.pcard dd{font-family:var(--serif);font-weight:500;white-space:nowrap}
+.pcard dl div.sum dd{font-weight:600}
+.pcard dl div.disc dd{color:var(--gold)}
+.pcard .fin{margin-top:14px;padding-top:14px;border-top:1px solid var(--ink)}
+.pcard .fin span{font-size:12px;color:var(--ink-3);display:block}
+.pcard .fin b{font-family:var(--serif);font-size:30px;font-weight:600;line-height:1.1;display:block;margin-top:2px}
+.pcard .fin b small{font-size:13px;font-weight:500;color:var(--ink-3);font-family:var(--sans);margin-left:4px}
+.pcard .cond{margin-top:10px;font-size:13px;color:var(--ink-2);padding:8px 10px;background:var(--paper-3);border-radius:2px}
+@media(max-width:900px){.promo{grid-template-columns:1fr}}
 /* 05 who */
 .who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .wcard{background:var(--paper-2);border:1px solid var(--line);padding:26px 26px}
@@ -249,7 +266,17 @@ footer p+p{margin-top:8px}
 .sc-vt th,.sc-vt td{padding:2vh 1vw;border-bottom:1px solid var(--line);text-align:left;font-weight:400}
 .sc-vt thead th{font-size:.65em;color:var(--ink-3);border-bottom:1px solid var(--ink)}
 .sc-vt td:first-child{font-family:var(--serif);font-weight:600}
-.sc-vt td:last-child{color:var(--gold);font-weight:600;font-family:var(--serif)}
+.sc-vt td:last-child{font-weight:600;font-family:var(--serif)}
+.sc-pr{display:grid;grid-template-columns:repeat(3,1fr);gap:2vw;margin-top:4vh;text-align:left}
+.sc-pr > div{background:var(--paper-2);border:1px solid var(--line);padding:2.6vh 1.8vw}
+.sc-pr > div.final{border-color:var(--gold)}
+.sc-pr h3{font-family:var(--serif);font-size:clamp(17px,1.5vw,26px);font-weight:600;min-height:2.6em}
+.sc-pr .s{font-size:clamp(14px,1.15vw,20px);color:var(--ink-3);margin-top:1.2vh}
+.sc-pr .s b{color:var(--ink);font-weight:500}
+.sc-pr .d{font-size:clamp(14px,1.15vw,20px);color:var(--gold);margin-top:.4vh;white-space:nowrap}
+.sc-pr .f{font-family:var(--serif);font-size:clamp(26px,2.5vw,44px);white-space:nowrap;font-weight:600;line-height:1.1;margin-top:1.4vh}
+.sc-pr .f small{font-size:.35em;font-weight:500;color:var(--ink-3);font-family:var(--sans);margin-left:.2em}
+.sc-pr .c{font-size:clamp(12px,1vw,17px);color:var(--ink-2);margin-top:1vh;padding:.8vh 1vw;background:var(--paper-3)}
 .sc-me{display:flex;align-items:center;gap:3vw;justify-content:center;margin-top:4vh}
 .sc-me img,.sc-me .mono{width:clamp(110px,12vw,190px);height:clamp(110px,12vw,190px);border-radius:50%;object-fit:cover;border:2px solid var(--gold)}
 .sc-me .mono{font-size:3em}
@@ -272,16 +299,16 @@ footer p+p{margin-top:8px}
 
 <div class="top"><div class="wrap">
   <div class="brand">140주년 에디션 II · 어프로치북</div>
-  <nav><a href="#models">세 모델</a><a href="#compare">비교</a><a href="#adds">에디션이 더한 것</a><a href="#eabc">GLS 580</a><a href="#why">왜 지금인가</a><a href="#who">맞는 분</a><a href="#consult">상담</a><button class="pm-btn" id="pmBtn" title="P 키">촬영 모드</button></nav>
+  <nav><a href="#models">세 모델</a><a href="#compare">비교</a><a href="#adds">에디션이 더한 것</a><a href="#eabc">GLS 580</a><a href="#why">왜 지금인가</a><a href="#promo">9월 프로모션</a><a href="#who">맞는 분</a><a href="#consult">상담</a><button class="pm-btn" id="pmBtn" title="P 키">촬영 모드</button></nav>
 </div></div>
 
 <header class="hero">
   <div class="hero-band"><img src="images/hero_wide.jpg" alt="GLE 450 4MATIC 140주년 에디션 II 알파인 그레이"></div>
   <div class="wrap hero-body"><div class="hero-grid">
     <div>
-      <h1><small>Mercedes-Benz 140th Anniversary · Edition II</small>컬러 에디션 3부작,<br>마지막 편은 알파인 그레이.</h1>
-      <p>자동차 발명 140주년. 그레이트 화이트 에디션과 나이트 시리즈에 이어, GLE·GLE Coupé·GLS 580에 알파인 그레이와 옵시디안 블랙으로 같은 패밀리 룩을 입혔습니다. 고가 옵션을 패키지 하나로 묶었고, 수량은 정해져 있습니다.</p>
-      <div class="trilogy"><span>그레이트 화이트</span><i></i><span>나이트 시리즈</span><i></i><span class="now">알파인 그레이 / 옵시디안 블랙 · Edition II</span></div>
+      <h1><small>Mercedes-Benz 140th Anniversary · Edition II</small>140주년을 기념하는<br>알파인 그레이, 그리고 블랙.</h1>
+      <p>자동차 발명 140주년. GLE·GLE Coupé·GLS 580에 알파인 그레이(GLE·Coupé는 옵시디안 블랙도 선택)로 같은 패밀리 룩을 입혔습니다. 고가 옵션을 패키지 하나로 묶었고, 수량은 정해져 있습니다.</p>
+      <div class="trilogy"><span class="now">MANUFAKTUR 알파인 그레이</span><i></i><span class="now">옵시디안 블랙</span><i></i><span>나파 가죽 · 블랙 휠 · 다크크롬</span></div>
     </div>
     <div class="hero-side">
       <div class="units"><div><b>350</b><span>대 · GLE 450</span></div><div><b>230</b><span>대 · GLE 450 Coupé</span></div><div><b>100</b><span>대 · GLS 580 Final</span></div></div>
@@ -303,7 +330,7 @@ footer p+p{margin-top:8px}
   <div class="s-head"><div class="s-num">02</div><h2 class="s-title">세 모델 비교</h2><p class="s-lead">에디션에 적용된 사양만 모았습니다. 금색 글씨가 모델 간 차이입니다.</p></div>
   <div class="swipe">표를 좌우로 밀어 보세요</div>
   <div class="tblwrap"><table class="cmp" id="cmpTable"></table></div>
-  <p class="tbl-note">권장 소비자가격은 개별소비세 5% 기준. 나이트 패키지(P55)·AMG Line 익스테리어(P31)는 세 모델 공통.</p>
+  <p class="tbl-note">권장 소비자가격은 개별소비세 5% 기준. 나이트 패키지(P55)는 GLE 450·Coupé AMG Line 기본 사양, GLS 580은 에디션 적용. AMG Line 익스테리어(P31)는 세 모델 공통.</p>
 </div></section>
 
 <section id="adds"><div class="wrap">
@@ -332,7 +359,6 @@ footer p+p{margin-top:8px}
       <ul>
         <li><b>코너에서 기울지 않습니다.</b> 커브 바깥쪽을 미리 눌러 차체 롤을 상쇄합니다. 대형 SUV가 세단처럼 돕니다.</li>
         <li><b>노면을 미리 봅니다.</b> 스테레오 카메라로 앞 노면을 읽고 과속방지턱 전에 서스펜션을 준비합니다.</li>
-        <li><b>모래·눈에 빠지면 차가 스스로 흔듭니다.</b> 프리 드라이빙 모드 — 차고를 반복해 올렸다 내려 접지력을 되찾습니다.</li>
       </ul>
     </div>
   </div>
@@ -343,21 +369,27 @@ footer p+p{margin-top:8px}
   <div class="s-head"><div class="s-num">05</div><h2 class="s-title">왜 지금인가</h2><p class="s-lead">한정 수량, 런아웃, 그리고 패키지 가격. 세 가지가 동시에 맞아떨어지는 시점은 길지 않습니다.</p></div>
   <div class="why">
     <div class="wbox"><div class="wn">680<small>대</small></div><h3>전국 수량이 정해져 있습니다</h3><p>GLE 350 · GLE Coupé 230 · GLS 580 100. 컬러별로도 나뉘어 있어(GLE 956U 175 / 197U 175, Coupé 115 / 115) 원하는 색은 더 적습니다.</p></div>
-    <div class="wbox"><div class="wn">Runout</div><h3>현행 세대의 마지막 구성</h3><p>MY26 GLE·GLS의 런아웃 에디션입니다. GLS 580 4MATIC은 "Final edition" — 이 100대가 국내 마지막입니다.</p></div>
-    <div class="wbox"><div class="wn">240<small>만~</small></div><h3>패키지 가격이 곧 가성비</h3><p>MANUFAKTUR 도장, 나이트 패키지, 나파 시트, 블랙 휠을 개별로 고르면 패키지가를 훌쩍 넘습니다. 아래 표에서 환산했습니다.</p></div>
+    <div class="wbox"><div class="wn">Runout</div><h3>현행 세대의 마지막 구성</h3><p>MY26 GLE·GLS의 런아웃 에디션입니다. GLS 580 4MATIC은 "Final edition"이라는 이름이 붙었습니다.</p></div>
+    <div class="wbox"><div class="wn">240<small>만~</small></div><h3>패키지 가격이 곧 가성비</h3><p>MANUFAKTUR 도장, 나파 시트, 블랙 휠, 다크크롬 디테일을 개별로 고르면 패키지가를 훌쩍 넘습니다. 아래 표가 실제 가격 구성입니다.</p></div>
   </div>
-  <div class="sub">에디션 패키지 환산 <small>에디션 가격 − 패키지 가격 = 동일 사양 AMG Line 기준가 (패키지 가격 기준 환산)</small></div>
+  <div class="sub">가격 구성 <small>차량가격 + 에디션 패키지 = 합산가격 (개별소비세 5% 기준)</small></div>
   <div class="value" id="valueRows"></div>
-  <p class="note">환산 기준가는 MBK 제품정보의 에디션 가격에서 패키지 옵션 가격을 뺀 값이고, 실제 개별 옵션 합산가와는 다를 수 있습니다. 패키지 안에 든 항목별 단가는 상담 시 옵션리스트로 보여드립니다.</p>
+  <p class="note">MANUFAKTUR 도장·나파 시트·블랙 휠·다크크롬 디테일을 개별 옵션으로 고르면 패키지 가격을 훌쩍 넘습니다. 항목별 단가는 상담 시 옵션리스트로 보여드립니다.</p>
+</div></section>
+
+<section id="promo"><div class="wrap">
+  <div class="s-head"><div class="s-num">06</div><h2 class="s-title">9월 프로모션</h2><p class="s-lead">합산가격에서 얼마가 빠지는지, 최종가격이 얼마인지. GLE 두 대는 벤츠파이낸셜 이용 조건, GLS 580은 할인가입니다.</p></div>
+  <div class="promo" id="promoCards"></div>
+  <p class="note">2026년 9월 기준이며 재고·컬러·금융 조건에 따라 달라질 수 있습니다. 벤츠파이낸셜 조건은 심사 결과에 따라 변경될 수 있고, 취득세·등록비용은 별도입니다.</p>
 </div></section>
 
 <section id="who"><div class="wrap">
-  <div class="s-head"><div class="s-num">06</div><h2 class="s-title">어느 분께 맞는가</h2></div>
+  <div class="s-head"><div class="s-num">07</div><h2 class="s-title">어느 분께 맞는가</h2></div>
   <div class="who-grid" id="whoCards"></div>
 </div></section>
 
 <section id="consult" class="consult"><div class="wrap">
-  <div class="s-head"><div class="s-num">07</div><h2 class="s-title">상담</h2></div>
+  <div class="s-head"><div class="s-num">08</div><h2 class="s-title">상담</h2></div>
   <div class="consult-grid">
     <img class="pf" src="https://jeontaekyu.github.io/benz_jeontaekyu/images/profile.jpg" alt="전태규 과장" onerror="this.outerHTML='<div class=\'mono big\'>JT</div>'">
     <div>
@@ -385,23 +417,28 @@ const ME = { name:'전태규', tel:'010-6233-0311' };
 const IMG = 'images/';
 const MODEL = {
   models: [
-    { name:'GLE 450 4MATIC AMG Line', bm:'16715912-KR9 · MY26', price:'1억 4,140만', units:'350대 · 956U 175 / 197U 175', pkg:'DA1 · 240만', img:'gle_grey.jpg',
+    { name:'GLE 450 4MATIC AMG Line', bm:'16715912-KR9 · MY26', price:'1억 4,140만', units:'350대 · 956U 175 / 197U 175', pkg:'DA1 · 240만', fin:'1억 1,877만', img:'gle_grey.jpg',
       pts:[['외장','알파인 그레이 · 옵시디안 블랙'],['내장','나파 가죽 블랙 (801A)'],['휠','22인치 AMG 블랙 (RPJ)']] },
-    { name:'GLE 450 4MATIC Coupé AMG Line', bm:'16735912-KR2 · MY26', price:'1억 4,540만', units:'230대 · 956U 115 / 197U 115', pkg:'DA1 · 290만', img:'gle_coupe_grey.jpg',
+    { name:'GLE 450 4MATIC Coupé AMG Line', bm:'16735912-KR2 · MY26', price:'1억 4,540만', units:'230대 · 956U 115 / 197U 115', pkg:'DA1 · 290만', fin:'1억 2,213만', img:'gle_coupe_grey.jpg',
       pts:[['외장','알파인 그레이 · 옵시디안 블랙'],['내장','나파 가죽 블랙 (801A)'],['휠','22인치 AMG 블랙 (RPJ)']] },
-    { name:'GLS 580 4MATIC AMG Line Final edition', bm:'16798512-KR3 · MY26', price:'1억 9,900만', units:'100대 · 956U 단일', pkg:'DA3 · 560만', final:true, img:'gls_grey.jpg',
+    { name:'GLS 580 4MATIC AMG Line Final edition', bm:'16798512-KR3 · MY26', price:'1억 9,900만', units:'100대 · 956U 단일', pkg:'DA3 · 560만', fin:'1억 8,706만', final:true, img:'gls_grey.jpg',
       pts:[['외장','알파인 그레이'],['내장','나파 가죽 블랙 (951A)'],['휠','23인치 AMG 블랙 (RPK)'],['섀시','E-액티브 바디 컨트롤 (490)']] }
   ],
   adds: [
-    { t:'알파인 그레이 · 옵시디안 블랙', code:'956U MANUFAKTUR · 197U', p:'3부작의 마지막 색. 알파인 그레이는 MANUFAKTUR 도장이라 일반 트림에서는 유료지만, 에디션에서는 기본입니다. 블랙 휠·다크크롬과 같은 톤으로 맞춰 설계된 조합입니다.', who:'세 모델 공통 · GLS는 알파인 그레이만', img:'gle_night_front.jpg' },
-    { t:'나이트 패키지', code:'P55', p:'그릴 서라운드, 윈도 트림, 미러 커버, 범퍼 요소를 고광택 블랙으로. 크롬이 사라진 만큼 차가 낮고 넓어 보입니다.', who:'세 모델 공통', img:'gls_night.jpg' },
-    { t:'나파 가죽 시트', code:'GLE 801A · GLS 951A', p:'ARTICO 인조가죽이 아니라 나파 가죽입니다. GLE·Coupé는 대시보드와 벨트라인까지 나파(U38)로 감싸 손이 닿는 곳이 전부 가죽입니다.', who:'세 모델 공통', img:'int_gle_801a.jpg' },
-    { t:'블랙 AMG 휠', code:'GLE 22인치 RPJ · GLS 23인치 RPK', p:'5 트윈 스포크 경량 알로이, 블랙. 나이트 패키지와 한 세트로 봐야 하는 항목이라 에디션에서 같이 묶였습니다.', who:'세 모델 공통', img:'wheel_rpk_23.jpg' }
+    { t:'알파인 그레이 · 옵시디안 블랙', code:'956U MANUFAKTUR · 197U', p:'알파인 그레이는 MANUFAKTUR 도장이라 일반 트림에서는 유료지만, 에디션에서는 기본입니다. 블랙 휠·다크크롬과 같은 톤으로 맞춰 설계된 조합입니다.', who:'세 모델 공통 · GLS는 알파인 그레이만', img:'gle_night_front.jpg' },
+    { t:'나이트 패키지 위에, 한 단계 더', code:'P55 + PDQ', p:'GLE 450·Coupé AMG Line은 나이트 패키지가 원래 기본입니다. 에디션은 그 위에 블랙 휠과 다크크롬 도어 핸들·블랙 도어 실·다크 섀도우 키를 얹어 블랙을 끝까지 밀어붙였습니다. GLS 580은 나이트 패키지가 없던 차라, 에디션에서 처음 적용됩니다.', who:'GLE·Coupé 기본 + 에디션 디테일 · GLS 에디션 적용', img:'gls_night.jpg' },
+    { t:'나파 가죽 시트', code:'GLE 801A · GLS 951A', p:'시트가 나파 가죽입니다. GLE·Coupé는 대시보드와 벨트라인까지 나파(U38)로 감싸 손이 닿는 곳이 전부 가죽입니다.', who:'세 모델 공통', img:'int_gle_801a.jpg' },
+    { t:'블랙 AMG 휠', code:'GLE 22인치 RPJ · GLS 23인치 RPK', p:'5 트윈 스포크 경량 알로이, 블랙. GLE·Coupé는 기본 나이트 패키지에 은색 휠이었던 걸 블랙으로, GLS 580은 은색 휠에 나이트 패키지가 없던 차에 둘 다 에디션으로 들어갑니다.', who:'GLE·Coupé 휠만 변경 · GLS 나이트 패키지 + 휠', img:'wheel_rpk_23.jpg' }
   ],
   value: [
-    ['GLE 450 4MATIC AMG Line','1억 4,140만','240만','1억 3,900만'],
-    ['GLE 450 4MATIC Coupé AMG Line','1억 4,540만','290만','1억 4,250만'],
-    ['GLS 580 4MATIC AMG Line Final edition','1억 9,900만','560만','1억 9,340만']
+    ['GLE 450 4MATIC AMG Line','1억 3,900만','240만','1억 4,140만'],
+    ['GLE 450 4MATIC Coupé AMG Line','1억 4,250만','290만','1억 4,540만'],
+    ['GLS 580 4MATIC AMG Line Final edition','1억 9,340만','560만','1억 9,900만']
+  ],
+  promo: [
+    { n:'GLE 450 4MATIC AMG Line', rows:[['차량가격','139,000,000'],['옵션가격','2,400,000'],['합산가격','141,400,000','sum'],['벤츠파이낸셜 이용 시 16%','− 22,630,000','disc']], final:'118,770,000', cond:'24개월 · 선수금 62% · 무이자' },
+    { n:'GLE 450 4MATIC Coupé AMG Line', rows:[['차량가격','142,500,000'],['옵션가격','2,900,000'],['합산가격','145,400,000','sum'],['벤츠파이낸셜 이용 시 16%','− 23,270,000','disc']], final:'122,130,000', cond:'24개월 · 선수금 62% · 무이자' },
+    { n:'GLS 580 4MATIC AMG Line Final edition', gls:true, rows:[['차량가격','193,400,000'],['옵션가격','5,600,000'],['합산가격','199,000,000','sum'],['할인가격','− 11,940,000','disc']], final:'187,060,000', cond:'금융 조건 별도 안내' }
   ],
   cmp: {
     cols:['GLE 450 SUV','GLE 450 Coupé','GLS 580'],
@@ -418,9 +455,9 @@ const MODEL = {
     ]
   },
   who: [
-    { n:'GLE 450 Edition II', p:'가족용 대형 SUV, 검은 디테일을 좋아하시는 분', pts:['크롬보다 블랙 — 나이트 패키지를 원래 넣으려던 분','알파인 그레이를 MANUFAKTUR 비용 없이 받고 싶은 분','350대 중 색을 고를 수 있을 때 계약하실 분'] },
+    { n:'GLE 450 Edition II', p:'가족용 대형 SUV, 검은 디테일을 좋아하시는 분', pts:['기본 나이트 패키지에 블랙 휠·다크크롬까지 맞추고 싶던 분','알파인 그레이를 MANUFAKTUR 비용 없이 받고 싶은 분','350대 중 색을 고를 수 있을 때 계약하실 분'] },
     { n:'GLE 450 Coupé Edition II', p:'같은 구성에 실루엣만 다르게', pts:['GLE와 400만 차이로 쿠페 라인을 고르는 분','뒷좌석 헤드룸보다 옆모습이 우선인 분','230대 — GLE보다 빨리 소진되는 쪽'] },
-    { n:'GLS 580 Final edition', p:'현행 GLS 580의 마지막 100대', final:true, pts:['E-액티브 바디 컨트롤이 들어간 GLS를 원하시는 분','V8 GLS 580 4MATIC을 새 차로 받을 마지막 기회를 찾는 분','23인치 블랙 휠과 알파인 그레이, 이 조합 하나로 정한 분'] }
+    { n:'GLS 580 Final edition', p:'현행 GLS 580의 마지막 100대', final:true, pts:['E-액티브 바디 컨트롤이 들어간 GLS를 원하시는 분','GLS 580 4MATIC을 새 차로 받을 마지막 기회를 찾는 분','23인치 블랙 휠과 알파인 그레이, 이 조합 하나로 정한 분'] }
   ]
 };
 
@@ -429,13 +466,13 @@ $('#modelCards').innerHTML = MODEL.models.map(m => `
   <div class="mcard ${m.final?'final':''}"><div class="fig dark"><img src="${IMG}${m.img}" alt="${m.name}"></div>
   <div class="mb"><div class="mn">${m.name}</div><div class="mc">${m.bm}</div>
   <div class="mp">${m.price}<small>원 · 개소세 5%</small></div><div class="mq">${m.units}</div>
-  <ul>${m.pts.map(p=>`<li><b>${p[0]}</b><span>${p[1]}</span></li>`).join('')}<li class="pk"><b>에디션 패키지</b><span>${m.pkg}</span></li></ul></div></div>`).join('');
+  <ul>${m.pts.map(p=>`<li><b>${p[0]}</b><span>${p[1]}</span></li>`).join('')}<li class="pk"><b>에디션 패키지</b><span>${m.pkg}</span></li><li class="pk"><b>9월 최종가</b><span>${m.fin}</span></li></ul></div></div>`).join('');
 
 $('#addCards').innerHTML = MODEL.adds.map(a => `
   <div class="acard"><div class="fig"><img src="${IMG}${a.img}" alt="${a.t}" loading="lazy"></div>
   <div class="ab"><h3>${a.t}</h3><div class="code">${a.code}</div><p>${a.p}</p><div class="who">${a.who}</div></div></div>`).join('');
 
-$('#valueRows').innerHTML = '<div class="h"><span>모델</span><span>에디션 가격</span><span>패키지 가격</span><span>환산 기준가</span></div>' +
+$('#valueRows').innerHTML = '<div class="h"><span>모델</span><span>차량가격</span><span>에디션 패키지</span><span>합산가격</span></div>' +
   MODEL.value.map(v=>`<div><span>${v[0]}</span><span>${v[1]}</span><span>${v[2]}</span><span>${v[3]}</span></div>`).join('');
 
 $('#cmpTable').innerHTML = '<thead><tr><th>구분</th>' + MODEL.cmp.cols.map(c=>`<th>${c}</th>`).join('') + '</tr></thead><tbody>' +
@@ -446,6 +483,12 @@ document.querySelectorAll('.fig img, .hero-band img').forEach(im=>im.addEventLis
 lb.addEventListener('click',()=>lb.classList.remove('on'));
 document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
 
+$('#promoCards').innerHTML = MODEL.promo.map(p=>`
+  <div class="pcard ${p.gls?'final':''}"><div class="pn">${p.n}</div>
+  <dl>${p.rows.map(r=>`<div class="${r[2]||''}"><dt>${r[0]}</dt><dd>${r[1]} 원</dd></div>`).join('')}</dl>
+  <div class="fin"><span>최종가격</span><b>${p.final}<small>원</small></b></div>
+  <div class="cond">${p.cond}</div></div>`).join('');
+
 $('#whoCards').innerHTML = MODEL.who.map(w => `
   <div class="wcard ${w.final?'final':''}"><h3>${w.n}</h3><div class="wp">${w.p}</div><ul>${w.pts.map(p=>`<li>${p}</li>`).join('')}</ul></div>`).join('');
 
@@ -453,39 +496,41 @@ $('#whoCards').innerHTML = MODEL.who.map(w => `
 const SC = [
  {type:'full', img:'hero_wide.jpg', kicker:'Mercedes-Benz 140th Anniversary · Edition II', h:'140주년 에디션 II', sub:'GLE · GLE Coupé · GLS 580 — 세 모델, 680대',
   script:'벤츠가 자동차 발명 140주년을 기념해서 GLE, GLE 쿠페, GLS 580에 에디션 II를 냈습니다. 오늘은 이 세 대가 일반 모델과 뭐가 다른지, 얼마인지, 몇 대인지, 그리고 누구한테 맞는 차인지까지 한 번에 정리해 드릴게요.'},
- {kicker:'컬러 에디션 3부작', h:'그레이트 화이트,<br>나이트, 그리고<br>알파인 그레이.', p:'세 번째이자 마지막 컬러 에디션입니다. 이번엔 알파인 그레이와 옵시디안 블랙, 두 색으로 나옵니다.', img:'gle_night_front.jpg',
-  list:[['그레이트 화이트 에디션',''],['나이트 시리즈',''],['<b>알파인 그레이 / 옵시디안 블랙 · Edition II</b>','']],
-  script:'먼저 맥락부터요. 그레이트 화이트 에디션, 나이트 시리즈, 그리고 이번 알파인 그레이·옵시디안 블랙. 벤츠코리아가 컬러 에디션을 3부작으로 냈는데 이게 마지막 편입니다. 그래서 "에디션 II"라는 이름이 붙었어요.'},
+ {kicker:'140주년 에디션 II', h:'같은 색, 같은 디테일.<br>세 대가 한 가족입니다.', p:'알파인 그레이, 블랙 휠, 나파 가죽. GLE·GLE Coupé·GLS 580이 같은 패밀리 룩을 공유합니다. 옵시디안 블랙과 다크크롬 디테일은 GLE 두 대에만 있습니다.', img:'gle_night_front.jpg',
+  list:[['MANUFAKTUR 알파인 그레이 — 세 모델 · 옵시디안 블랙 — GLE·쿠페만',''],['블랙 AMG 휠 · 나이트 패키지',''],['<b>나파 가죽 시트</b>','']],
+  script:'먼저 공통점부터요. GLE, GLE 쿠페, GLS 580 세 대 모두 알파인 그레이에 블랙 휠, 나이트 패키지, 그리고 나파 가죽 시트. 한 가족처럼 같은 룩을 공유합니다. 옵시디안 블랙과 다크크롬 디테일은 GLE 두 대에만 있어요. 지금부터 한 대씩 볼게요.'},
  {kicker:'01 · GLE 450 4MATIC AMG Line', h:'GLE 450', num:'1억 4,140만', nums:'원 · 개소세 5%', img:'gle_grey.jpg', imgc:true,
-  list:[['<b>350대</b> — 알파인 그레이 175 · 옵시디안 블랙 175',''],['에디션 패키지 240만 포함','DA1'],['22인치 AMG 블랙 휠 · 나파 시트 · 나이트 패키지','']],
+  list:[['<b>350대</b> — 알파인 그레이 175 · 옵시디안 블랙 175',''],['에디션 패키지 240만 포함','DA1'],['22인치 AMG 블랙 휠 · 나파 시트 · 다크크롬 디테일','']],
   script:'첫 번째, GLE 450 4매틱 AMG 라인. 1억 4,140만원이고 350대입니다. 알파인 그레이 175대, 옵시디안 블랙 175대로 딱 반반이에요. 이 가격 안에 에디션 패키지 240만원어치가 들어가 있습니다. 뭐가 들어가는지는 뒤에서 하나씩 보여드릴게요.'},
  {kicker:'02 · GLE 450 4MATIC Coupé AMG Line', h:'GLE 450 Coupé', num:'1억 4,540만', nums:'원 · 개소세 5%', img:'gle_coupe_grey.jpg', imgc:true,
   list:[['<b>230대</b> — 알파인 그레이 115 · 옵시디안 블랙 115',''],['에디션 패키지 290만 포함','DA1'],['GLE와 구성 동일, 실루엣만 다름','']],
-  script:'두 번째, GLE 450 쿠페. 1억 4,540만원, GLE보다 400만원 위입니다. 230대, 색은 각 115대. 에디션 구성은 GLE와 똑같아요. 쿠페 실루엣이냐 SUV냐, 그 차이만 보시면 됩니다. 쿠페가 대수가 적어서 먼저 빠집니다.'},
+  script:'두 번째, GLE 450 쿠페. 1억 4,540만원, GLE보다 400만원 위입니다. 230대, 색은 각 115대. 에디션 구성은 GLE와 똑같아요. 쿠페 실루엣이냐 SUV냐, 그 차이만 보시면 됩니다. 대수는 GLE보다 적은 편이에요.'},
  {kicker:'03 · GLS 580 4MATIC AMG Line Final edition', h:'GLS 580 Final', num:'1억 9,900만', nums:'원 · 개소세 5%', img:'gls_grey.jpg', imgc:true,
   list:[['<b>100대</b> — 알파인 그레이 단일',''],['에디션 패키지 560만 포함','DA3'],['<b>E-액티브 바디 컨트롤</b> · 23인치 AMG 블랙 휠','490 · RPK']],
   script:'세 번째가 오늘의 주인공입니다. GLS 580 4매틱, 이름에 "파이널 에디션"이 붙었어요. 1억 9,900만원, 100대, 알파인 그레이 한 가지 색. 여기는 패키지가 560만원인데, 이 안에 E-액티브 바디 컨트롤이 들어갑니다. 이게 뭔지는 잠시 뒤에 따로 설명드릴게요.'},
  {type:'table', kicker:'At a glance', h:'세 모델, 한 장으로.', 
   script:'표로 한 번 정리하면 이렇습니다. 위 세 줄이 가격·수량·색, 아래가 에디션이 더해준 것들. 금색으로 표시한 칸이 모델마다 다른 부분이에요. GLE 두 대는 실내 나파 범위와 다크크롬 디테일, GLS는 섀시. 방향이 완전히 다릅니다.'},
- {kicker:'에디션이 더한 것 ①', h:'나이트 패키지,<br>그리고 두 가지 색.', p:'크롬이 전부 고광택 블랙으로 바뀝니다. 알파인 그레이는 MANUFAKTUR 도장인데, 에디션에서는 추가 비용 없이 들어갑니다.', img:'gls_night.jpg',
-  list:[['그릴 서라운드 · 윈도 트림 · 미러 커버 블랙','P55'],['MANUFAKTUR 알파인 그레이','956U'],['옵시디안 블랙 — GLE·쿠페만','197U']],
-  script:'에디션이 더해준 것, 첫 번째는 나이트 패키지입니다. 그릴 테두리, 창틀, 미러 커버까지 크롬이 전부 검정으로 바뀌어요. 그리고 알파인 그레이. 이게 마누팍투어 도장이라 원래는 돈을 더 내는 색인데, 에디션에서는 그냥 들어갑니다. 옵시디안 블랙은 GLE 두 대만 고를 수 있어요.'},
- {kicker:'에디션이 더한 것 ②', h:'GLE 22인치,<br>GLS 23인치.', p:'AMG 5 트윈 스포크, 블랙. 나이트 패키지랑 한 세트로 봐야 하는 항목이라 같이 묶였습니다.', img:'wheel_rpk_23.jpg',
+ {kicker:'에디션이 더한 것 ①', h:'블랙을 끝까지,<br>그리고 두 가지 색.', p:'GLE 450 AMG Line은 나이트 패키지가 원래 기본. 에디션은 그 위에 휠·핸들·도어 실까지 블랙으로 맞추고, MANUFAKTUR 알파인 그레이를 추가 비용 없이 얹었습니다.', img:'gls_night.jpg',
+  list:[['나이트 패키지 — GLE·쿠페 기본, GLS는 에디션 적용','P55'],['MANUFAKTUR 알파인 그레이','956U'],['옵시디안 블랙 — GLE·쿠페만','197U']],
+  script:'에디션이 더해준 것, 첫 번째는 색입니다. 참고로 GLE 450 AMG 라인은 나이트 패키지가 원래 기본이에요. 에디션은 거기서 한 발 더 나가서 휠, 도어 핸들, 도어 실까지 전부 검정으로 맞춘 거고요. 그리고 알파인 그레이. 이게 마누팍투어 도장이라 원래는 돈을 더 내는 색인데, 에디션에서는 그냥 들어갑니다. 옵시디안 블랙은 GLE 두 대만 고를 수 있어요.'},
+ {kicker:'에디션이 더한 것 ②', h:'GLE 22인치,<br>GLS 23인치.', p:'AMG 5 트윈 스포크, 블랙. GLE·Coupé는 은색 휠이 블랙으로 바뀌고, GLS 580은 나이트 패키지와 블랙 휠이 함께 에디션으로 들어갑니다.', img:'wheel_rpk_23.jpg',
   list:[['GLE · Coupé — 22인치','RPJ'],['GLS 580 — 23인치','RPK']],
-  script:'두 번째, 휠. GLE는 22인치, GLS는 23인치 AMG 5 트윈 스포크 블랙입니다. 나이트 패키지 해놓고 은색 휠이면 어색하잖아요. 그래서 이 둘은 항상 같이 갑니다. GLS 23인치는 실물로 보면 체격이랑 딱 맞아요.'},
- {kicker:'에디션이 더한 것 ③', h:'시트만이 아니라,<br>대시보드까지 나파.', p:'ARTICO 인조가죽이 아니라 나파 가죽입니다. GLE·쿠페는 대시보드와 벨트라인까지 나파로 감쌌어요.', img:'int_gle_801a.jpg',
+  script:'두 번째, 휠. GLE는 22인치, GLS는 23인치 AMG 5 트윈 스포크 블랙입니다. GLE는 원래 나이트 패키지에 휠만 은색이었는데 에디션이 그걸 블랙으로 맞춰준 거고, GLS 580은 나이트 패키지 자체가 없던 차라 에디션에서 나이트 패키지랑 블랙 휠이 같이 들어갑니다. GLS 23인치는 실물로 보면 체격이랑 딱 맞아요.'},
+ {kicker:'에디션이 더한 것 ③', h:'시트만이 아니라,<br>대시보드까지 나파.', p:'시트가 나파 가죽입니다. GLE·쿠페는 대시보드와 벨트라인까지 나파로 감쌌어요.', img:'int_gle_801a.jpg',
   list:[['나파 가죽 블랙 시트','GLE 801A · GLS 951A'],['대시보드·벨트라인 나파 — GLE·Coupé','U38'],['앤트러사이트 오픈포어 오크 트림','H31']],
-  script:'세 번째, 실내. 시트가 나파 가죽입니다. 일반 AMG 라인은 아티코 인조가죽이에요. 그리고 GLE 두 대는 대시보드랑 도어 벨트라인까지 나파로 감쌌습니다. 손이 닿는 데가 전부 진짜 가죽이라는 뜻이에요. 트림은 앤트러사이트 오픈포어 오크.'},
+  script:'세 번째, 실내. 시트가 나파 가죽입니다. 그리고 GLE 두 대는 대시보드랑 도어 벨트라인까지 나파로 감쌌습니다. 손이 닿는 데가 전부 진짜 가죽이라는 뜻이에요. 트림은 앤트러사이트 오픈포어 오크.'},
  {kicker:'에디션이 더한 것 ④', h:'문을 여는 순간,<br>에디션인 걸 압니다.', p:'다크 섀도우 키, 블랙 도어 실 패널, 다크크롬 도어 핸들. 코드 하나로 묶여서 GLE·쿠페에 들어갑니다.', img:'doorsill_pdq.jpg',
   list:[['블랙 도어 실 패널',''],['다크크롬 도어 핸들',''],['다크 섀도우 키','PDQ']],
   script:'네 번째는 작은 디테일인데 고객분들이 제일 먼저 알아보는 부분이에요. 문 열면 보이는 블랙 도어실, 다크크롬 핸들, 그리고 키까지 다크 섀도우. GLE와 쿠페에 들어갑니다.'},
  {kicker:'GLS 580 · 560만의 실체', h:'E-액티브<br>바디 컨트롤.', p:'48V 유압 액추에이터가 바퀴 네 개의 스프링과 댐퍼를 각각 따로 제어합니다. 에어서스펜션이 차 전체를 부드럽게 한다면, 이건 바퀴 하나하나를 노면에 맞춥니다.', img:'eabc_chassis.jpg', imgc:true,
-  list:[['<b>코너에서 기울지 않습니다</b> — 커브 바깥쪽을 미리 눌러 롤 상쇄',''],['<b>노면을 미리 봅니다</b> — 카메라로 방지턱 전에 준비',''],['<b>빠지면 스스로 흔듭니다</b> — 프리 드라이빙 모드','']],
-  script:'자, GLS 580 패키지 560만원의 실체, E-액티브 바디 컨트롤입니다. 48볼트 유압으로 바퀴 네 개를 각각 따로 제어해요. 코너 돌 때 차가 안 기울고, 카메라로 방지턱을 미리 보고 서스펜션을 준비하고, 모래에 빠지면 차가 스스로 위아래로 흔들어서 빠져나옵니다.'},
- {type:'value', kicker:'왜 지금인가', h:'패키지 가격을 빼면,<br>기본가가 보입니다.', p:'에디션 가격에서 패키지 가격을 빼면 동일 사양 AMG Line 기준가가 나옵니다. 마누팍투어 도장·나이트·나파·블랙 휠을 따로 고르면 이 금액을 훌쩍 넘습니다.',
-  script:'그러면 이게 비싼 건지 싼 건지. 에디션 가격에서 패키지 가격을 빼보면 됩니다. GLE는 1억 3,900만, 쿠페는 1억 4,250만, GLS는 1억 9,340만. 이 위에 240만, 290만, 560만을 얹어서 마누팍투어 도장, 나이트 패키지, 나파, 블랙 휠, GLS는 E-ABC까지 받는 거예요. 이걸 개별 옵션으로 고르면 패키지 가격은 훌쩍 넘습니다. 그리고 런아웃이라 이 구성은 다시 안 나와요.'},
+  list:[['<b>코너에서 기울지 않습니다</b> — 커브 바깥쪽을 미리 눌러 롤 상쇄',''],['<b>노면을 미리 봅니다</b> — 카메라로 방지턱 전에 준비','']],
+  script:'자, GLS 580 패키지 560만원의 실체, E-액티브 바디 컨트롤입니다. 48볼트 유압으로 바퀴 네 개를 각각 따로 제어해요. 코너 돌 때 차가 안 기울고, 카메라로 방지턱을 미리 보고 서스펜션을 미리 준비합니다. 대형 SUV인데 세단처럼 돌아요.'},
+ {type:'value', kicker:'왜 지금인가', h:'차량가격에 패키지를 얹으면,<br>이 가격입니다.', p:'차량가격 + 에디션 패키지 = 합산가격. 마누팍투어 도장·나파·블랙 휠·다크크롬을 따로 고르면 패키지 가격을 훌쩍 넘습니다.',
+  script:'그러면 이게 비싼 건지 싼 건지. 차량가격이 GLE 1억 3,900만, 쿠페 1억 4,250만, GLS 1억 9,340만이고, 여기에 240만, 290만, 560만 패키지를 얹어서 마누팍투어 도장, 나파, 블랙 휠, 다크크롬 디테일, GLS는 E-ABC까지 받는 거예요. 이걸 개별 옵션으로 고르면 패키지 가격은 훌쩍 넘습니다. 그리고 런아웃이라 이 구성은 다시 안 나와요.'},
+ {type:'promo', kicker:'9월 프로모션', h:'그리고 지금은,<br>여기서 더 빠집니다.',
+  script:'9월 프로모션 조건이에요. GLE 450은 벤츠파이낸셜 이용하시면 16%, 2,263만원이 빠져서 최종 1억 1,877만원. 쿠페는 2,327만원 빠져서 1억 2,213만원. 둘 다 24개월, 선수금 62%, 무이자 조건입니다. GLS 580은 1,194만원 할인돼서 1억 8,706만원. 조건은 9월 기준이고 재고랑 색에 따라 달라질 수 있으니까 문의 주시면 그 시점 기준으로 다시 잡아드릴게요.'},
  {type:'who', kicker:'어느 분께', h:'세 대, 세 분.',
-  script:'정리하면 이렇습니다. GLE 450은 크롬보다 블랙을 원하시던 분, 가족용으로 넉넉한 SUV가 필요한 분. 쿠페는 같은 구성인데 옆모습이 우선인 분, 400만 차이로 결정하시면 됩니다. GLS 580은 딱 하나예요, E-ABC가 들어간 GLS를 원하시는 분. 100대입니다.'},
+  script:'정리하면 이렇습니다. GLE 450은 기본 나이트 패키지에 블랙 휠·다크크롬까지 맞추고 싶던 분, 가족용으로 넉넉한 SUV가 필요한 분. 쿠페는 같은 구성인데 옆모습이 우선인 분, 400만 차이로 결정하시면 됩니다. GLS 580은 딱 하나예요, E-ABC가 들어간 GLS를 원하시는 분. 100대입니다.'},
  {type:'end', kicker:'출고는, 인연의 시작', h:'한정판은 순번이 곧 색입니다.<br>원하는 색부터 잡아두세요.',
   script:'한정판은 순번이 곧 색이에요. 원하는 모델과 색 알려주시면 당일 배정 가능 여부 확인해 드립니다. 설명란에 이 페이지 링크 있으니까 표랑 사진 천천히 보시고요. 이런 한정판·출시 정보는 나오는 대로 정리해서 올리고 있으니까 구독해 두시면 편해요. 벤츠 송파·스타필드 하남 전태규였습니다.'}
 ];
@@ -502,6 +547,7 @@ const SC = [
     if(sc.type==='full') return `<section class="scene full"><img class="sc-img" src="${IMG}${sc.img}" alt=""><div class="sc-overlay">${head}</div></section>`;
     if(sc.type==='table') return `<section class="scene center"><div>${head}<div style="margin-top:3vh">${tblHTML()}</div></div></section>`;
     if(sc.type==='value') return `<section class="scene center"><div style="max-width:1100px;margin:0 auto">${head}<p class="sc-p rv" style="max-width:none;margin:1.5vh auto 0">${sc.p}</p><table class="sc-vt rv"><thead><tr><th>모델</th><th>에디션 가격</th><th>패키지</th><th>환산 기준가</th></tr></thead><tbody>${MODEL.value.map(v=>`<tr><td>${v[0]}</td><td>${v[1]}</td><td>${v[2]}</td><td>${v[3]}</td></tr>`).join('')}</tbody></table></div></section>`;
+    if(sc.type==='promo') return `<section class="scene center"><div style="max-width:1200px;margin:0 auto">${head}<div class="sc-pr">${MODEL.promo.map(p=>`<div class="rv ${p.gls?'final':''}"><h3>${p.n}</h3><div class="s">합산가격 <b>${p.rows[2][1]} 원</b></div><div class="d">${p.rows[3][0]} ${p.rows[3][1]}</div><div class="f">${p.final}<small>원</small></div><div class="c">${p.cond}</div></div>`).join('')}</div></div></section>`;
     if(sc.type==='who') return `<section class="scene center"><div>${head}<div class="sc-cols">${MODEL.who.map(w=>`<div class="sc-col rv ${w.final?'final':''}"><h3>${w.n}</h3><div class="wp">${w.p}</div><p>${w.pts[0]}</p></div>`).join('')}</div></div></section>`;
     if(sc.type==='end') return `<section class="scene center"><div>${head}<div class="sc-me rv"><img src="${PROFILE}" alt="" onerror="this.outerHTML='<div class=mono>JT</div>'"><div><b>전태규 과장 · HS효성더클래스</b><span>벤츠 송파전시장 · 스타필드 하남전시장<br>010-6233-0311 · @benz.jeontaekyu</span></div></div></div></section>`;
     return `<section class="scene"><div>${head}${sc.num?`<div class="sc-num rv">${sc.num}<small>${sc.nums||''}</small></div>`:''}${sc.p?`<p class="sc-p rv">${sc.p}</p>`:''}${sc.list?`<ul class="sc-list">${sc.list.map(li).join('')}</ul>`:''}</div><img class="sc-img ${sc.imgc?'contain':''}" src="${IMG}${sc.img}" alt=""></section>`;
