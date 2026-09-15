@@ -258,6 +258,16 @@ footer p+p{margin-top:8px}
 .sc-img{width:100%;height:78vh;object-fit:cover;border:1px solid var(--line);background:#000}
 .sc-img.contain{object-fit:contain;background:#000}
 .scene.full .sc-img{height:100vh;border:0}
+.scene.wide{grid-template-columns:1fr;grid-template-rows:auto 1fr;gap:3vh;padding:0 0 4vh;align-content:start}
+.scene.wide .sc-img{height:50vh;border:0;border-bottom:1px solid var(--line);object-fit:contain;background:#e9e9e9}
+.scene.wide .sc-body{display:grid;grid-template-columns:1.1fr 1fr;gap:5vw;padding:0 7vw;align-items:center}
+.scene.wide .sc-num{margin:1vh 0 .3vh;font-size:clamp(44px,5.2vw,84px)}
+.scene.wide .sc-h{font-size:clamp(28px,3.4vw,54px)}
+.scene.wide .sc-p{font-size:clamp(16px,1.3vw,22px);max-width:none}
+.scene.wide .sc-list{margin-top:0}
+.scene.wide .sc-list li{padding:1.2vh 0 1.2vh 1.2em}
+.scene.wide .sc-list li::before{top:calc(1.2vh + .7em)}
+@media(max-width:860px){.scene.wide .sc-img{height:34vh}.scene.wide .sc-body{grid-template-columns:1fr;padding:0 6vw}}
 .sc-overlay{position:absolute;left:7vw;bottom:9vh;background:rgba(247,244,238,.94);padding:3vh 3vw;max-width:60vw;border-left:4px solid var(--gold)}
 .sc-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5vw;margin-top:4vh;text-align:left}
 .sc-col{background:var(--paper-2);border:1px solid var(--line);padding:3vh 2vw}
@@ -509,16 +519,16 @@ $('#whoCards').innerHTML = MODEL.who.map(w => `
 const SC = [
  {type:'full', img:'hero_wide.jpg', kicker:'Mercedes-Benz 140th Anniversary · Edition II', h:'140주년 에디션 II', sub:'GLE · GLE Coupé · GLS 580 — 세 모델, 680대',
   script:'벤츠가 자동차 발명 140주년을 기념해서 GLE, GLE 쿠페, GLS 580에 에디션 II를 냈습니다. 오늘은 이 세 대가 일반 모델과 뭐가 다른지, 얼마인지, 몇 대인지, 그리고 누구한테 맞는 차인지까지 한 번에 정리해 드릴게요.'},
- {kicker:'140주년 에디션 II', h:'같은 색, 같은 디테일.<br>세 대가 한 가족입니다.', p:'알파인 그레이, 블랙 휠, 나파 가죽. GLE·GLE Coupé·GLS 580이 같은 패밀리 룩을 공유합니다. 옵시디안 블랙과 다크크롬 디테일은 GLE 두 대에만 있습니다.', img:'e140_gle_black.jpg',
+ {kicker:'140주년 에디션 II', h:'같은 색, 같은 디테일.<br>세 대가 한 가족입니다.', p:'알파인 그레이, 블랙 휠, 나파 가죽. GLE·GLE Coupé·GLS 580이 같은 패밀리 룩을 공유합니다. 옵시디안 블랙과 다크크롬 디테일은 GLE 두 대에만 있습니다.', wide:true, img:'e140_gle_black.jpg',
   list:[['MANUFAKTUR 알파인 그레이 — 세 모델 · 옵시디안 블랙 — GLE·쿠페만',''],['블랙 AMG 휠 · 나이트 패키지',''],['<b>나파 가죽 시트</b>','']],
   script:'먼저 공통점부터요. GLE, GLE 쿠페, GLS 580 세 대 모두 알파인 그레이에 블랙 휠, 나이트 패키지, 그리고 나파 가죽 시트. 한 가족처럼 같은 룩을 공유합니다. 옵시디안 블랙과 다크크롬 디테일은 GLE 두 대에만 있어요. 지금부터 한 대씩 볼게요.'},
- {kicker:'01 · GLE 450 4MATIC AMG Line', h:'GLE 450', num:'1억 4,140만', nums:'원 · 개소세 5%', img:'e140_gle_grey.jpg',
+ {kicker:'01 · GLE 450 4MATIC AMG Line', h:'GLE 450', num:'1억 4,140만', nums:'원 · 개소세 5%', wide:true, img:'e140_gle_grey.jpg',
   list:[['<b>350대</b> — 알파인 그레이 175 · 옵시디안 블랙 175',''],['에디션 패키지 240만 포함','DA1'],['22인치 AMG 블랙 휠 · 나파 시트 · 다크크롬 디테일','']],
   script:'첫 번째, GLE 450 4매틱 AMG 라인. 1억 4,140만원이고 350대입니다. 알파인 그레이 175대, 옵시디안 블랙 175대. GLE를 올블랙으로 타고 싶으셨던 분들, 이번엔 휠이랑 다크크롬까지 검정이에요. 이 가격 안에 에디션 패키지 240만원어치가 들어가 있습니다. 뭐가 들어가는지는 뒤에서 하나씩 보여드릴게요.'},
- {kicker:'02 · GLE 450 4MATIC Coupé AMG Line', h:'GLE 450 Coupé', num:'1억 4,540만', nums:'원 · 개소세 5%', img:'e140_coupe_black.jpg',
+ {kicker:'02 · GLE 450 4MATIC Coupé AMG Line', h:'GLE 450 Coupé', num:'1억 4,540만', nums:'원 · 개소세 5%', wide:true, img:'e140_coupe_black.jpg',
   list:[['<b>230대</b> — 알파인 그레이 115 · 옵시디안 블랙 115',''],['에디션 패키지 290만 포함','DA1'],['GLE와 구성 동일, 실루엣만 다름','']],
   script:'두 번째, GLE 450 쿠페. 1억 4,540만원, GLE보다 400만원 위입니다. 230대, 알파인 그레이 115대, 옵시디안 블랙 115대. 에디션 구성은 GLE와 똑같아요. 쿠페 실루엣이냐 SUV냐, 그 차이만 보시면 됩니다. 대수는 GLE보다 적은 편이에요.'},
- {kicker:'03 · GLS 580 4MATIC AMG Line Final edition', h:'GLS 580 Final', num:'1억 9,900만', nums:'원 · 개소세 5%', img:'e140_gls_grey.jpg',
+ {kicker:'03 · GLS 580 4MATIC AMG Line Final edition', h:'GLS 580 Final', num:'1억 9,900만', nums:'원 · 개소세 5%', wide:true, img:'e140_gls_grey.jpg',
   list:[['<b>100대</b> — 알파인 그레이 단일',''],['에디션 패키지 560만 포함','DA3'],['<b>E-액티브 바디 컨트롤</b> · 23인치 AMG 블랙 휠','490 · RPK']],
   script:'세 번째가 오늘의 주인공입니다. GLS 580 4매틱, 이름에 "파이널 에디션"이 붙었어요. 1억 9,900만원, 100대, 알파인 그레이 한 가지 색. 여기는 패키지가 560만원인데, 이 안에 E-액티브 바디 컨트롤이 들어갑니다. 이게 뭔지는 잠시 뒤에 따로 설명드릴게요.'},
  {type:'table', kicker:'At a glance', h:'세 모델, 한 장으로.', 
@@ -563,6 +573,7 @@ const SC = [
     if(sc.type==='promo') return `<section class="scene center"><div style="max-width:1200px;margin:0 auto">${head}<div class="sc-pr">${MODEL.promo.map(p=>`<div class="rv ${p.gls?'final':''}"><h3>${p.n}</h3><div class="s">합산가격 <b>${p.rows[2][1]} 원</b></div><div class="d">${p.rows[3][0]} ${p.rows[3][1]}</div><div class="f">${p.final}<small>원</small></div><div class="c">${p.cond}</div></div>`).join('')}</div></div></section>`;
     if(sc.type==='who') return `<section class="scene center"><div>${head}<div class="sc-cols">${MODEL.who.map(w=>`<div class="sc-col rv ${w.final?'final':''}"><h3>${w.n}</h3><div class="wp">${w.p}</div><p>${w.pts[0]}</p></div>`).join('')}</div></div></section>`;
     if(sc.type==='end') return `<section class="scene center"><div>${head}<div class="sc-me rv"><img src="${PROFILE}" alt="" onerror="this.outerHTML='<div class=mono>JT</div>'"><div><b>전태규 과장 · HS효성더클래스</b><span>벤츠 송파전시장 · 스타필드 하남전시장<br>010-6233-0311 · @benz.jeontaekyu</span></div></div></div></section>`;
+    if(sc.wide) return `<section class="scene wide"><img class="sc-img" src="${IMG}${sc.img}" alt=""><div class="sc-body"><div>${head}${sc.num?`<div class="sc-num rv">${sc.num}<small>${sc.nums||''}</small></div>`:''}${sc.p?`<p class="sc-p rv">${sc.p}</p>`:''}</div>${sc.list?`<ul class="sc-list">${sc.list.map(li).join('')}</ul>`:''}</div></section>`;
     return `<section class="scene"><div>${head}${sc.num?`<div class="sc-num rv">${sc.num}<small>${sc.nums||''}</small></div>`:''}${sc.p?`<p class="sc-p rv">${sc.p}</p>`:''}${sc.list?`<ul class="sc-list">${sc.list.map(li).join('')}</ul>`:''}</div><img class="sc-img ${sc.imgc?'contain':''}" src="${IMG}${sc.img}" alt=""></section>`;
   }).join('');
   const scenes=[...wrap.querySelectorAll('.scene')]; nEl.textContent=scenes.length;
