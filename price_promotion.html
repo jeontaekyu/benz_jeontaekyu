@@ -17,7 +17,7 @@ const PROMO = {
   campaigns: [
     { tag: "CAMPAIGN 01", title: "10월 조건 = 10/31 계약 + 11/4까지 인도", desc: "계약·세일즈카드 캡처는 10월 마지막 영업일(10/31)까지, 차량 인도 예정일(CHD)은 10/1~11/4 범위여야 10월 조건이 승인됩니다. 인도가 11/4를 넘기면 11월 조건으로 다시 계산 — 계약만 먼저 했다고 10월 할인이 확정되는 게 아닙니다." },
     { tag: "CAMPAIGN 02", title: "GLE 450 가솔린 쿠페 — 금융 시 19%", desc: "26년식 GLE 450 4MATIC 쿠페(AMG Line 포함) 12% → 15%, 금융 +4% 중첩 시 19% — GLE 역대 최대. 1억 4,250만 → 1억 1,542만. GLE 450 d 쿠페도 8% → 12%. 타브랜드 보유 시 +1% 더." },
-    { tag: "CAMPAIGN 03", title: "GLB 250 — 13%, 금융 시 17%", desc: "7인승 컴팩트 SUV GLB 250 4MATIC이 9% → 13%로 올라 금융 시 17%(5,976만). 벤츠 파트너사 임직원 가족이면 MB Family 특별금융(월 53만원 × 6개월 지원, 100대 한정)까지 — 해당 여부는 상담 시 확인해 드립니다." },
+    { tag: "CAMPAIGN 03", title: "GLB 250 — 13%, 금융 시 17%", desc: "7인승 컴팩트 SUV GLB 250 4MATIC이 9% → 13%로 올라 금융 시 17%(5,976만)." },
     { tag: "CAMPAIGN 04", title: "E클래스 — 디젤·하이브리드 상향, 27년식 첫 할인", desc: "E 220 d 9% → 12%, E 350 e 11% → 14%. E 200 Exclusive 20%·AMG Line 19%(금융 시)는 유지. 27년식 E 300 Exclusive·AMG Line에 8%(금융 시 12%), E 450에 10%가 처음 붙었습니다." },
     { tag: "CAMPAIGN 05", title: "마이바흐 S 680 · GLS 600 — 재구매 +9%", desc: "26년식 마이바흐 S 680·GLS 600 재구매 추가 할인이 +2% → +9%로 확대. 타브랜드(롤스로이스·벤틀리 포함) 보유 시 +7%. 둘 중 하나만 적용되며, S 680은 운용리스 +2%까지 더하면 최대 20%(3억 2,240만)." },
     { tag: "CAMPAIGN 06", title: "AMG — F1 패독 투어 & 6개월 납입금 지원", desc: "26년식 AMG S 63·GLE 53(SUV·쿠페)·GLS 63 구매 시 2027 F1 일본 그랑프리(4/9~11) 패독 투어 초대권 1매(5성급 호텔·비즈니스 항공 포함). 안심보장할부 이용 시 월 납입금 지원이 AMG GLB 35·E 53·S 63·GLE 53·GLS 63까지 확대됐습니다. 지난달 AMG 포커스 사은품은 종료." },
@@ -30,8 +30,6 @@ const PROMO = {
     { model: "E 200 AMG Line (MY26)",    std: "5.83%", sure: "5.60%", sup: "월 37만 × 6" },
     { model: "E 300 Exclusive · AMG Line (MY26)", std: "5.24%", sure: "5.65%", sup: "월 45만 × 6" },
     { model: "E 300 (MY27)",                   std: "6.75%", sure: "6.75%", sup: "—" },
-    { model: "GLC 300 Avantgarde SUV·쿠페 (MY26)", std: "5.34%", sure: "5.69%", sup: "월 40만 × 6" },
-    { model: "GLC 300 AMG Line SUV·쿠페 (MY26)",   std: "5.23%", sure: "5.63%", sup: "월 45만 × 6" },
     { model: "GLC 300 (MY27)",                 std: "6.55%", sure: "6.45%", sup: "—" },
     { model: "GLE 450 SUV·쿠페 (MY26)",         std: "5.23%", sure: "5.64%", sup: "월 60만 × 6 (AMG Line)" },
     { model: "GLA 250 · GLB 250 (MY26)",       std: "5.20%", sure: "5.62%", sup: "—" },
@@ -49,9 +47,6 @@ const PROMO = {
 
   my27: [
     { name: "GLE 450 4MATIC Coupé AMG Line",  y26: 19, y27: null },
-    { name: "GLC 300 4MATIC AMG Line",        y26: 16, y27: 7 },
-    { name: "GLC 300 4MATIC Coupé AMG Line",  y26: 13, y27: 5 },
-    { name: "GLC 300 4MATIC AVANTGARDE",      y26: 11, y27: 7 },
     { name: "E 300 4MATIC AMG Line",          y26: 14, y27: 12 },
     { name: "E 300 4MATIC EXCLUSIVE",         y26: 14, y27: 12 },
     { name: "E 450 4MATIC AMG Line",          y26: 11, y27: 10 },
@@ -66,7 +61,7 @@ const PROMO = {
     { cls: "컴팩트", list: "GLA 250 4MATIC(26·27년식) · GLB 250 4MATIC <b>13 → 17%</b> · AMG GLB 35 · AMG A 45 S" },
     { cls: "C클래스", list: "C 200 Avantgarde · C 200 AMG Line · C 200 Final Edition — 모두 14%" },
     { cls: "E클래스", list: "E 200 Exclusive <b>+5% = 20%</b> · E 200 AMG Line 19% · E 300 Exclusive·AMG Line 14% · <b>27년식 E 300</b> 12%" },
-    { cls: "GLC", list: "GLC 300 Avantgarde 11% · AMG Line 16% · 쿠페 Avantgarde 11% · 쿠페 AMG Line 13%" },
+    
     { cls: "GLE", list: "GLE 450 4MATIC · 450 AMG Line 16% · <b>450 쿠페·쿠페 AMG Line 19%</b>" },
     { cls: "EQ", list: "EQA 250(26·27년식) · EQB 300 4MATIC — 14% + 무이자 할부" },
   ],
@@ -107,12 +102,12 @@ const PROMO = {
       ]
     },
     {
-      id: "GL", label: "GLA · GLB", point: "GLB 250이 9% → 13%로 올라 금융 시 17% — 컴팩트 SUV 최대 조건. 벤츠 파트너사 임직원 가족이면 MB Family 특별금융(100대 한정) 추가. GLA·AMG GLB 35는 금융 13% 유지.",
+      id: "GL", label: "GLA · GLB", point: "GLB 250이 9% → 13%로 올라 금융 시 17% — 컴팩트 SUV 최대 조건. GLA·AMG GLB 35는 금융 13% 유지.",
       models: [
         { name: "GLA 250 4MATIC AMG Line",        price: 70000000, base: 9,  jc: 13,   mbm: true,  note: "" },
         { name: "GLA 250 4MATIC AMG Line (MY27)", price: 70800000, base: 9,  jc: 13,   mbm: true,  note: "MY27 — MY26과 동일 조건" },
         { name: "GLB 200 d",                      price: 64300000, base: 0,  jc: null, mbm: false, note: "10월 판매조건표 미기재 — 재고 문의" },
-        { name: "GLB 250 4MATIC",                 price: 72000000, base: 13, jc: 17,   mbm: true,  note: "지난달 9% → 13% 상향 · 금융 시 17% · MB Family 특별금융(월 53만 × 6개월 지원) 대상" },
+        { name: "GLB 250 4MATIC",                 price: 72000000, base: 13, jc: 17,   mbm: true,  note: "지난달 9% → 13% 상향 · 금융 시 17%" },
         { name: "AMG GLB 35 4MATIC",              price: 79500000, base: 9,  jc: 13,   mbm: true,  note: "안심보장할부 이용 시 월 50만 × 6개월 납입금 지원 신규" },
       ]
     },
@@ -203,10 +198,6 @@ const PROMO = {
       id: "GLC", label: "GLC", point: "AMG Line 12% + 금융 4% = 16% 유지, GLC 220 d는 7% → 10%로 상향. 타브랜드 보유 시 +1%. 27년식 GLC 300이 SUV 7%·쿠페 5%로 처음 조건이 붙었습니다 — 26년식 AMG Line과는 9%p 차이. 전기 GLC(X540)는 사전계약 단계로 조건 없음.",
       models: [
         { name: "GLC 220 d 4MATIC",                     price: 82200000,  base: 10, jc: null, mbm: false, note: "지난달 7% → 10% 상향" },
-        { name: "GLC 300 4MATIC AVANTGARDE",            price: 82500000,  base: 7,  jc: 11,   mbm: true,  note: "월 40만 × 6개월 납입금 지원" },
-        { name: "GLC 300 4MATIC AMG Line",              price: 92500000,  base: 12, jc: 16,   mbm: true,  note: "금융 시 16% · 월 45만 × 6개월 납입금 지원 · 140주년 에디션(9,790만)도 동일 16%" },
-        { name: "GLC 300 4MATIC Coupé AVANTGARDE",      price: 86600000,  base: 7,  jc: 11,   mbm: true,  note: "월 40만 × 6개월 납입금 지원" },
-        { name: "GLC 300 4MATIC Coupé AMG Line",        price: 96900000,  base: 9,  jc: 13,   mbm: true,  note: "금융 시 13% · 월 45만 × 6개월 납입금 지원 · 140주년 에디션(1억 360만)도 동일 13%" },
         { name: "AMG GLC 43 4MATIC",                    price: 103600000, base: 7,  jc: null, mbm: false, note: "AMG 포커스 사은품은 9월로 종료" },
         { name: "AMG GLC 43 4MATIC Coupé",              price: 108300000, base: 3,  jc: null, mbm: false, note: "AMG 포커스 사은품은 9월로 종료" },
         { name: "GLC 300 4MATIC AVANTGARDE (MY27)",     price: 82500000,  base: 7,  jc: null, mbm: false, note: "MY27 첫 할인 7% — 금융 추가 없음 · 금리 6.55%" },
@@ -224,6 +215,8 @@ const PROMO = {
         { name: "GLE 450 4MATIC AMG Line",         price: 139000000, base: 12, jc: 16,   mbm: true,  note: "금융 시 16% · 월 60만 × 6개월 납입금 지원" },
         { name: "GLE 450 d 4MATIC Coupé AMG Line", price: 134000000, base: 12, jc: null, mbm: false, note: "지난달 8% → 12% 상향 · 디젤 쿠페" },
         { name: "GLE 450 4MATIC Coupé AMG Line",   price: 142500000, base: 15, jc: 19,   mbm: true,  note: "지난달 12% → 15% 상향 · 금융 시 19% = 1억 1,542만 — GLE 역대 최대 · 기본 쿠페도 동일 조건" },
+        { name: "GLE 450 4MATIC AMG Line 140주년 에디션 II", price: 141400000, base: 12, jc: 16, mbm: true, note: "에디션 패키지(240만) 포함가 · 350대 · 알파인 그레이·옵시디안 블랙 · 기본 모델과 동일 조건" },
+        { name: "GLE 450 4MATIC Coupé AMG Line 140주년 에디션 II", price: 145400000, base: 15, jc: 19, mbm: true, note: "에디션 패키지(290만) 포함가 · 230대 · 금융 시 19% — 정가는 GLE보다 높지만 실구매가는 더 낮음" },
         { name: "AMG GLE 53 4MATIC+",              price: 166000000, base: 8,  jc: null, mbm: false, note: "F1 일본 GP 패독 투어 초대 · 월 115만 × 6개월 납입금 지원 신규" },
         { name: "AMG GLE 53 4MATIC+ Coupé",        price: 170000000, base: 5,  jc: null, mbm: false, note: "F1 일본 GP 패독 투어 초대 · 월 115만 × 6개월 납입금 지원 신규" },
       ]
@@ -234,6 +227,7 @@ const PROMO = {
         { name: "GLS 450 4MATIC AMG Line",   price: 154000000, base: 8, jc: null, mbm: false, note: "지난달 5% → 8% 상향 · AMG Line Premium(1억 5,850만) 재고 문의" },
         { name: "GLS 450 d 4MATIC AMG Line", price: 154000000, base: 2, jc: null, mbm: false, note: "" },
         { name: "GLS 580 4MATIC AMG Line",   price: 193400000, base: 9, jc: null, mbm: false, note: "지난달 6% → 9% 상향" },
+        { name: "GLS 580 4MATIC AMG Line 140주년 Final edition", price: 199000000, base: 9, jc: null, mbm: false, note: "에디션 패키지(560만 · E-액티브 바디 컨트롤 포함)가 · 100대 · 알파인 그레이 단일 · 기본 모델과 동일 조건" },
         { name: "AMG GLS 63 4MATIC+",        price: 210000000, base: 1, jc: null, mbm: false, note: "F1 일본 GP 패독 투어 초대 · 월 145만 × 6개월 납입금 지원 신규" },
         { name: "Maybach GLS 600",           price: 295000000, base: 5, jc: null, mbm: false, note: "재구매 +9%(총 14% = 2억 5,370만) 또는 타브랜드 +7%(총 12% = 2억 5,960만) 택1" },
         { name: "Maybach GLS 600 MANUFAKTUR", price: 337000000, base: 5, jc: null, mbm: false, note: "재구매 +9%(총 14% = 2억 8,982만) 또는 타브랜드 +7%(총 12% = 2억 9,656만) 택1" },
@@ -277,14 +271,14 @@ PROMO.cases = {
 const P={
  A:"해치백 10%, AMG A 45 S는 금융 시 11%. 27년식 A 45 S(8,230만)는 조건 없음 — 26년식을 잡는 게 답입니다.",
  CLA:"CLA 250 7% 유지. 신형 CLA 220·전기 CLA는 가격표에만 올라왔고 10월 조건은 없습니다 — 사전계약 상담으로 안내.",
- GL:"GLB 250이 13%로 올라 금융 시 17%, 컴팩트 SUV 최대 조건. 7인승이 필요한 가족이라면 이번 달이 기회입니다.",
+ GL:"GLB 250이 13%로 올라 금융 시 17% — 이달 상향 폭이 가장 큰 차. 첫 벤츠 SUV로 많이 고르시는 5인승 컴팩트, 이 가격이면 이번 달이 기회입니다.",
  C:"세 트림 모두 금융 시 14% 유지. 안심보장할부 5.67%에 월 30만 × 6개월 지원이 붙어 월 부담이 가장 가벼운 달입니다.",
  E:"E 200 Exclusive 20%·AMG Line 19%는 유지, 디젤 E 220 d(12%)와 하이브리드 E 350 e(14%)가 올랐습니다. 27년식 E 300은 12%로 26년식(14%)과 2%p 차이라 색상만 맞으면 27년식으로 넘겨도 됩니다.",
  S26:"26년식 S클래스 재고 10% 유지. AMG S 63은 F1 패독 투어와 월 200만 × 6개월 지원까지 — 재고 한 자릿수입니다.",
  S27:"신형 S클래스는 10월 현금 할인 없음. 사전계약 재구매 고객에게는 보증연장과 골든타임 사은품만 제공되며, 계약금 500만원.",
  MMS:"26년식 마이바흐 9% + 운용리스 2%, 보증연장 포함. S 680은 재구매 +9% 또는 타브랜드 +7%가 붙어 최대 20% — 기존 S클래스 오너라면 지금 계산해 볼 가치가 있습니다.",
  DR:"26년식 조건은 9월과 동일. 27년식 GT 43·SL 43이 8%로 들어왔는데 26년식(9%)과 1%p 차이라 사실상 같은 값 — 색상으로 고르세요.",
- GLC:"AMG Line 금융 16% 유지, GLC 220 d는 10%로 상향. 27년식 GLC 300은 7%(쿠페 5%)로 26년식과 9%p 차이 — 26년식 GLC 재고는 지금 잡아야 합니다.",
+ GLC:"26년식 GLC 300은 재고 소진 — 이제 GLC 300은 27년식(SUV 7% · 쿠페 5%, 현금만)입니다. 디젤 GLC 220 d 26년식은 10%로 상향, AMG GLC 43은 7%/3% 유지.",
  GLE:"이달의 주인공. GLE 450 가솔린 쿠페 15%, 금융 시 19%로 GLE 역대 최대이고 디젤 쿠페도 12%로 올랐습니다. 타브랜드 보유 시 +1% 더.",
  GLS:"GLS 450 8%·580 9%로 3%p씩 상향, 마이바흐 GLS 600은 재구매 시 14%. G클래스는 전 연식 할인 없음 — 계약금 500만원·근저당 설정 안내 필수.",
  EQ:"전 차종 10% + 보증연장, EQA·EQB는 금융 14%에 무이자까지. 전기차 입문이라면 EQA 250 Progressive 6,020만이 기준점입니다.",
@@ -378,15 +372,22 @@ table.tbl td.hl{background:var(--gray);border-left:3px solid var(--ink);padding-
 table.tbl td.hl .pr{font-size:20px}table.tbl td.hl .base{font-size:11.5px;color:var(--sub);display:block}
 table.tbl td.hl .case{display:block;font-size:11.5px;color:var(--sub);margin-top:4px}table.tbl td.hl .case b{color:var(--ink);font-family:'Barlow Condensed',sans-serif;font-size:16px;margin-left:6px}
 .up{display:inline-block;background:var(--num);color:#fff;font-size:10.5px;padding:1px 6px;margin-left:6px;vertical-align:2px;font-family:'Barlow Condensed',sans-serif;letter-spacing:.04em}
-/* finance tabs */
-.ftabs{display:flex;gap:0;border-bottom:1px solid var(--line);margin-top:22px;overflow-x:auto;scrollbar-width:none}
-.ftabs button{background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:12px 16px;font:inherit;font-size:13.5px;font-weight:600;color:var(--sub);cursor:pointer;white-space:nowrap}.ftabs button.on{color:var(--ink);border-bottom-color:var(--ink)}
-.fpan{display:none;padding-top:22px}.fpan.on{display:block}
-.fpan p{font-size:13.5px;color:var(--sub);margin-bottom:10px;max-width:900px}.fpan p b{color:var(--ink)}
-.minis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}.minis.four{grid-template-columns:repeat(4,1fr)}
-.mini{border:1px solid var(--line);padding:16px 18px}.mini h4{font-size:13.5px;font-weight:600;margin-bottom:6px}.mini p{font-size:12.5px;margin:0}.mini p b{font-family:'Barlow Condensed',sans-serif;font-size:19px;color:var(--ink);letter-spacing:.02em}.mini p b.r{color:var(--num)}
-.gift{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
-.gift div{background:var(--gray);padding:18px 20px}.gift h4{font-size:14px;font-weight:600;margin-bottom:6px}.gift p{margin:0;font-size:13px}
+/* buying guide — numbered steps */
+.steps{list-style:none;margin-top:28px;border-top:2px solid var(--ink)}
+.step{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:30px 0 32px;border-bottom:1px solid var(--line)}
+.sn b{display:block;font-family:'Barlow Condensed',sans-serif;font-size:46px;font-weight:600;line-height:1;letter-spacing:.02em}
+.sn span{display:block;font-size:12px;color:var(--sub);margin-top:8px;letter-spacing:.04em}
+.sb{min-width:0}.sb h3{font-size:18.5px;font-weight:600;letter-spacing:-.01em;margin-bottom:12px}
+.sb p{font-size:13.5px;color:var(--sub);max-width:820px;margin-top:12px;line-height:1.75}.sb p b{color:var(--ink)}
+.kv{display:flex;gap:44px;margin:4px 0 2px}.kv b{font-family:'Barlow Condensed',sans-serif;font-size:42px;font-weight:600;line-height:1;letter-spacing:.02em;white-space:nowrap}.kv b small{font-size:13px;color:var(--sub);margin-left:4px;font-weight:400;font-family:'Pretendard Variable',sans-serif;letter-spacing:0}.kv span{display:block;font-size:12.5px;color:var(--sub);margin-top:6px}
+table.cmp{width:100%;max-width:820px;border-collapse:collapse;font-size:13px;margin-top:4px}
+table.cmp th{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:.12em;color:var(--faint);text-transform:uppercase;text-align:left;padding:0 12px 8px 0;border-bottom:1px solid var(--ink);font-weight:600;white-space:nowrap}
+table.cmp td{padding:9px 12px 9px 0;border-bottom:1px solid var(--line);vertical-align:middle}table.cmp td.n{font-weight:600;color:var(--ink)}
+table.cmp td .pct{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:600;letter-spacing:.02em;white-space:nowrap}table.cmp td .pct.r{color:var(--num)}table.cmp td .pct small{font-size:11px;color:var(--sub);font-family:'Pretendard Variable',sans-serif;font-weight:400;margin-left:3px;letter-spacing:0}
+table.cmp td .sm{font-size:11.5px;color:var(--sub);display:block}
+
+
+
 /* extra */
 .ex{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
 .exc{border:1px solid var(--line);padding:20px 22px 18px}.exc .v{font-family:'Barlow Condensed',sans-serif;font-size:34px;font-weight:600;color:var(--num);line-height:1;letter-spacing:.02em}.exc .v small{font-size:14px;color:var(--sub);margin-left:6px;font-family:'Pretendard Variable',sans-serif;font-weight:400}
@@ -420,7 +421,7 @@ table.tbl td.hl .case{display:block;font-size:11.5px;color:var(--sub);margin-top
  table.tbl td::before{content:attr(data-l);display:block;font-family:'Barlow Condensed',sans-serif;font-size:10.5px;letter-spacing:.12em;color:var(--faint);text-transform:uppercase}table.tbl td.nm::before{display:none}
  table.tbl td.hl{grid-column:1/-1;padding:8px 12px;margin-top:6px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}table.tbl td.hl::before{width:100%}
  table.tbl td .pct{font-size:17px}
- .minis,.minis.four,.gift,.ex{grid-template-columns:1fr}
+ .ex{grid-template-columns:1fr}.step{grid-template-columns:1fr;gap:12px;padding:22px 0 24px}.sn{display:flex;align-items:baseline;gap:10px}.sn b{font-size:30px}.sn span{margin-top:0}.kv{gap:26px}.kv b{font-size:34px}table.cmp{font-size:12.5px}table.cmp td .pct{font-size:17px}
  .foot .in{grid-template-columns:1fr;text-align:left}.foot .tel,.foot .links{text-align:left;justify-content:flex-start}
 }
 </style></head><body>
@@ -439,14 +440,17 @@ table.tbl td.hl .case{display:block;font-size:11.5px;color:var(--sub);margin-top
   <section class="sec" id="price"><div class="lab">Model Price List</div><h2 class="h2">차종별 가격표</h2><p class="p">각 행의 실구매가는 표기된 기본·금융 조건을 적용한 값입니다. 재구매·타브랜드 등 고객별 추가 할인은 포함되지 않았습니다.</p>
     <div class="basis"><div>프로모션 기준 <b>2026.10</b></div><div class="d">권장가 <b>2026.10.08</b> 가격표 · 개소세 5% · VAT 포함</div><div class="d">실구매가 만원 미만 절삭 · 갱신 <b id="d-updated"></b></div></div>
     <div id="d-segs"></div></section>
-  <section class="sec" id="fin"><div class="lab">Finance & Terms</div><h2 class="h2">금융 · 구매 기준</h2>
-    <div class="ftabs" id="d-ftabs"><button class="on" data-p="p1">계약금 · 연식</button><button data-p="p2">현금 vs 금융</button><button data-p="p3">10월 금리</button><button data-p="p4">전기차 금융</button><button data-p="p5">납입금 지원 · 사은품</button></div>
-    <div class="fpan on" id="p1"><p><b>계약금</b>은 일반 차종 <b>300만원</b>, S클래스(마이바흐 포함)·G클래스·BTO 주문 <b>500만원</b>입니다. 출시 예정 모델의 사전계약금은 차종별로 다를 수 있습니다.</p><p>상향된 조건은 전부 <b>26년식 재고</b>에 붙습니다. 27년식은 E 300(금융 시 12%)·GLC 300(SUV 7% · 쿠페 5%)이 이달 처음 할인이 생겼고, 27년식 S클래스·G클래스·전기 GLC·전기 CLA는 할인이 없습니다. MY26 조건을 MY27에 그대로 적용하지 않습니다.</p><p>G클래스는 계약 시 수출 방지 서약과 근저당 설정(현금·할부, 출고 6개월 후 자동 해지)이 필요합니다. 리스·렌트는 서약만 진행합니다.</p></div>
-    <div class="fpan" id="p2"><div class="minis" id="d-cmp"></div><p style="margin-top:14px">금융 추가 할인은 벤츠 파이낸셜(MBFSK)·벤츠 모빌리티(MBMK) 금융상품 이용 시 적용됩니다. 마이바흐 S 580·S 680(MY26)은 현금 9%, 운용리스·장기렌트 이용 시 11%입니다. 선수금 비율과 개월수만 알려주시면 할인 포함 월 납입금까지 계산해 드립니다.</p></div>
-    <div class="fpan" id="p3"><p>2026년 10월 · <b>60개월 / 선수금 30%</b> 기준 연 금리입니다. 벤츠 파이낸셜 이용 이력이 있는 리텐션 고객은 0.40%p 낮아집니다. 다른 기간·선수금·운용리스 조건은 개별 견적으로 안내합니다.</p><div class="minis four" id="d-rates"></div><p style="margin-top:14px">일반 할부는 신차교환보상 3년, 안심보장할부(MB-Sure)는 신차교환 + 타이어 교환 보상 3년이 포함됩니다. 표에 없는 차종은 일반 할부 6.55~7.58% 수준입니다.</p></div>
-    <div class="fpan" id="p4"><p>EQA·EQB는 대상 연식·상품의 <b>무이자 할부</b>와 금융 추가 할인 4%를 함께 검토할 수 있습니다. 무이자 적용 선수금·기간은 견적별로 확인합니다.</p><div class="minis"><div class="mini"><h4>EQA · EQB 운용리스</h4><p>일반 <b>1.68%</b> · 리텐션 <b>1.28%</b></p></div><div class="mini"><h4>EQE · EQS 안심보장할부</h4><p>일반 <b>4.13%</b> · 리텐션 <b>3.73%</b></p></div><div class="mini"><h4>EQE · EQS 운용리스</h4><p>일반 <b>4.82%</b> · 리텐션 <b>4.42%</b></p></div></div><p style="margin-top:14px">벤츠 모빌리티(MBMK) EQ 장기렌트 고객은 100만원 상당 충전 바우처 대상 여부를 확인할 수 있습니다. 전 EQ 차종은 무상 보증연장(최대 5년/17만km)이 포함됩니다.</p></div>
-    <div class="fpan" id="p5"><p><b>MY26 안심보장할부(MB-Sure) 대상 모델</b>의 첫 6개월 월 납입금을 정해진 한도 안에서 지원합니다. 실제 납입액이 한도보다 적으면 실제 납입액까지만, 중도상환 시 종료. 결제일 15일 또는 25일.</p><div class="minis four" id="d-sup"></div>
-      <div class="gift"><div><h4>골든타임 — 7일 완납 사은품</h4><p>10월 계약 중 계약금 입금부터 잔금 완납까지 <b>7일 이내</b>면 MB 컬렉션 제공. AMG·S클래스·마이바흐·GLS·EQS는 웰컴 골프백 또는 폴딩 체어 2개, 그 외는 웰컴 보스턴백 또는 캠핑 테이블·피크닉 블랭킷 중 택 1. G클래스 제외.</p></div><div><h4>AMG F1 프리미엄 패독 투어</h4><p><b>MY26 AMG S 63, GLE 53 SUV·쿠페, GLS 63</b> 구매 고객에게 2027년 F1 일본 그랑프리(4/9~11) 패독 투어 초대권 1매 — 비즈니스 항공권·5성급 호텔 포함. 배정 가능 여부는 계약 전에 확인해 드립니다.</p></div></div></div>
+  <section class="sec" id="fin"><div class="lab">Buying Guide</div><h2 class="h2">계약부터 출고까지, 순서대로</h2><p class="p">상담 때 실제로 설명드리는 순서입니다. 계약금 → 연식 → 현금·금융 선택.</p>
+    <ol class="steps">
+      <li class="step"><div class="sn"><b>01</b><span>계약금</span></div><div class="sb"><h3>계약은 300만 원 또는 500만 원으로 시작합니다</h3>
+        <div class="kv"><div><b>300<small>만원</small></b><span>일반 차종</span></div><div><b>500<small>만원</small></b><span>S클래스(마이바흐 포함) · G클래스 · BTO 주문</span></div></div>
+        <p>출시 예정 모델의 사전계약금은 차종별로 다를 수 있습니다. <b>G클래스</b>는 계약 시 수출 방지 서약과 근저당 설정(현금·할부, 출고 6개월 후 자동 해지)이 필요하고, 리스·렌트는 서약만 진행합니다.</p></div></li>
+      <li class="step"><div class="sn"><b>02</b><span>연식 확인</span></div><div class="sb"><h3>10월에 오른 조건은 전부 26년식 재고에 붙습니다</h3>
+        <p>26년식 GLC 300은 재고가 소진되어 GLC 300은 27년식(SUV 7% · 쿠페 5%)만 판매됩니다. 27년식 E 300은 금융 시 12%로 이달 처음 할인이 생겼고, 27년식 S클래스·G클래스·전기 GLC·전기 CLA는 할인이 없습니다. <b>MY26 조건을 MY27에 그대로 적용하지 않으니</b>, 가격표에서 <b>MY27</b> 태그가 붙은 행은 따로 보셔야 합니다.</p></div></li>
+      <li class="step"><div class="sn"><b>03</b><span>현금 / 금융</span></div><div class="sb"><h3>벤츠 파이낸셜을 쓰면 4%p — E 200 Exclusive는 5%p — 더 빠집니다</h3>
+        <table class="cmp"><thead><tr><th>Model</th><th>현금</th><th>금융 이용 시</th><th>금융 시 실구매가</th></tr></thead><tbody id="d-cmp"></tbody></table>
+        <p>금융 추가 할인은 벤츠 파이낸셜(MBFSK)·벤츠 모빌리티(MBMK) 금융상품 이용 시에만 적용됩니다. 마이바흐 S 580·S 680(MY26)은 현금 9%, 운용리스·장기렌트 이용 시 11%. 현금 구매 예정이셔도 선수금 비율과 개월수만 알려주시면 금융이 유리한지 같이 계산해 드립니다.</p></div></li>
+    </ol>
   </section>
   <section class="sec" id="extra"><div class="lab">Additional Discounts</div><h2 class="h2">조건이 맞으면 더 빠지는 것</h2><p class="p">기본·금융 할인 위에 중첩됩니다. 재구매와 타브랜드 보유는 둘 중 하나만.</p>
     <div class="ex">
@@ -495,9 +499,7 @@ function row(m,sid){
    <td class="hl" data-l="실구매가">${cs?cs.map(c=>`<span class="case">${c.label} · 총 ${c.pct}%<b>${won(calc(p,c.pct))}</b></span>`).join('')+`<span class="base">기본 ${jc??base}% 기준 ${won(best)} · 택1</span>`:`<span class="pr">${won(best)}</span><span class="base">${jc!=null?'금융 이용 기준':base?'현금 기준':'권장가 기준'}</span>`}</td></tr>`;}
 $('d-segs').innerHTML=PROMO.segments.map((s,i)=>`<section class="seg" id="seg-${s.id}"><div class="hd"><span class="no">${String(i+1).padStart(2,'0')}</span><h3>${s.label}</h3><span class="cnt">${s.models.length}개 모델</span></div><p class="pt">${s.point}</p>
  <table class="tbl"><thead><tr><th>Model</th><th>권장가<small>개소세 5% · VAT 포함</small></th><th>기본 할인</th><th>금융 이용 시</th><th class="hl">실구매가<small>만원 미만 절삭</small></th></tr></thead><tbody>${s.models.map(m=>row(m,s.id)).join('')}</tbody></table></section>`).join('');
-$('d-cmp').innerHTML=[['GLB 250 4MATIC · MY26','현금 <b>13%</b> → 금융 <b class="r">17%</b>'],['E 200 EXCLUSIVE · MY26','현금 <b>15%</b> → 금융 <b class="r">20%</b>'],['E 200 AMG Line · MY26','현금 <b>15%</b> → 금융 <b class="r">19%</b>'],['GLE 450 가솔린 쿠페 · MY26','현금 <b>15%</b> → 금융 <b class="r">19%</b>'],['GLS · MY26','450 AMG Line <b>8%</b> · 580 <b>9%</b> (현금)'],['MY27 E 300 · GLC 300','E 300 금융 <b class="r">12%</b> · GLC SUV <b>7%</b> · 쿠페 <b>5%</b>']].map(x=>`<div class="mini"><h4>${x[0]}</h4><p>${x[1]}</p></div>`).join('');
-$('d-rates').innerHTML=PROMO.rates.filter(r=>!/EQ/.test(r.model)).map(r=>`<div class="mini"><h4>${r.model}</h4><p>일반 <b>${r.std}</b> · 안심보장 <b>${r.sure}</b></p></div>`).join('');
-$('d-sup').innerHTML=PROMO.rates.filter(r=>r.sup!=='—').map(r=>{const x=r.sup.match(/월 (\d+)만/);return `<div class="mini"><h4>${r.model.replace(/ \(MY26\)/,'')}</h4><p>월 <b class="r">${x[1]}만</b> × 6개월 · 한도 ${(x[1]*6).toLocaleString()}만</p></div>`;}).join('');
-document.querySelectorAll('.ftabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.ftabs button').forEach(x=>x.classList.remove('on'));document.querySelectorAll('.fpan').forEach(x=>x.classList.remove('on'));b.classList.add('on');$(b.dataset.p).classList.add('on');});
+const CMP=[['GL','GLB 250 4MATIC','GLB 250'],['E','E 200 EXCLUSIVE','E 200 Exclusive'],['E','E 200 AMG Line','E 200 AMG Line'],['GLE','GLE 450 4MATIC Coupé AMG Line','GLE 450 쿠페 AMG Line'],['GLE','GLE 450 4MATIC AMG Line','GLE 450 AMG Line'],['E','E 300 4MATIC AMG Line (MY27)','E 300 AMG Line · MY27']];
+$('d-cmp').innerHTML=CMP.map(([sid,n,t])=>{const m=findM(sid,n);return `<tr><td class="n">${t}</td><td><span class="pct">${m.base}%</span></td><td><span class="pct r">${m.jc}%<small>+${m.jc-m.base}%p</small></span></td><td><span class="pct">${won(calc(m.price,m.jc))}</span></td></tr>`;}).join('');
 $('fab').onclick=()=>$('sheet').classList.add('on');$('sheetx').onclick=()=>$('sheet').classList.remove('on');$('d-chips2').onclick=()=>$('sheet').classList.remove('on');
 </script></body></html>
